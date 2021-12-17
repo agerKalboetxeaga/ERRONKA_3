@@ -1,0 +1,15 @@
+Master-Pass:
+	addy-hzhq-qw2f
+
+DatabaseName:
+	DisunityOfPepe
+
+Gmail: 
+	dop@HOTmail.com
+
+Password
+
+	password
+	
+ApplicationsPage.
+	http://localhost:8069/web?db=DisunityOfPepe#action=35&model=ir.module.module&view_type=kanban&cids=&menu_id=5

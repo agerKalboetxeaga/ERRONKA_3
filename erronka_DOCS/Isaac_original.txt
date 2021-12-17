@@ -1,0 +1,15 @@
+mover: awsd
+atacar: arrows --> en el nuestro el espacio y dispara a donde este mirando?
+disparos: a una distancia se "caen" y se "rompen" --> nosotros no y cuando toque una pared rebota
+movimiento: tiene un delay al moverse como si fuera inercia
+enemigos: van a por ti y algunos sueltan medio corazon para recuperar
+Salas con tesoros: en las salas con dos cosas: hay un tesoro en el centro y los siguientes enemigos:
+enemigos mas dificiles (mas velocidad) 
+enemigos que buelan y disparan objetos hacia ti
+enemigos que "andan bajo suelo" y aparecen cerca tuyo
+enemigos que cuando disparas y los "matas" se dividen
+enemigos que van en "enjambre circular" es decir estan dando vueltas coordinadamente?
+cofres ocultos que no abres hasta que pasas por encima
+las distintas pelotas meten distintas fisicas a las mismas cambiando el gameplaypor ejemplo tener mas "caida"
+de forma random hay una sala  de un boss random
+obstaculos: 2 rectanculos en en  centro pero cada uno en una esquina y con 4 agujeros, dentro hay mobs estaticos que te disparan si pasas delante

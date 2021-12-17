@@ -1,0 +1,15 @@
+Datubasearen tables:
+	Pertsona
+	partida
+
+
+Columns:
+	Pertsona:	(same as odoo`s postgres)
+
+	partida: (id_partida (PK)
+				 id_persona,(FK)
+				 pertsona izena,
+				 puntuazioa,
+				 kills,
+				 time,
+				 date)

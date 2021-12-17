@@ -1,0 +1,7 @@
+Jokoa --> Puntuazioa(eguna, puntuak, langilea odootik) --> datubasea(postgresql);
+Partiden datuak postgresetik --> mongoDB --> SQLServer --> Rest-API baten bidez erakutsi.
+Odoo Moduloa sortu python erabiliz (modulo honek partida taulako datuak kudeatu eta bistaratzeko erabiliko da);
+
+
+Juego --> Teo va a la fabrica(w/ Jorge)
+
