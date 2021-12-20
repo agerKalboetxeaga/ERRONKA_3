@@ -3,10 +3,19 @@ Datubasearen tables:
 	partida
 
 
-Columns:
-	Pertsona:	(same as odoo`s postgres)
+Tables:
+	Pertsona:		
+				(Id (PK),
+				Name,
+				street,
+				zip_code,
+				city,
+				email,
+				mobile_phone)
 
-	partida: (id_partida (PK)
+
+	Partida: 		
+				(id_partida (PK)
 				 id_persona,(FK)
 				 pertsona izena,
 				 puntuazioa,

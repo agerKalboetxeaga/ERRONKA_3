@@ -38,23 +38,39 @@
         }
       </field>
     </record>
+    <field name="res_partner_id"/>
 -->
+<!--    VISTA   -->
 
-    <!-- Top menu item -->
-<!--
-    <menuitem name="partidak" id="partidak.menu_root"/>
--->
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="partidak.menu_1" parent="partidak.menu_root"/>
-    <menuitem name="Menu 2" id="partidak.menu_2" parent="partidak.menu_root"/>
--->
-    <!-- actions -->
-<!--
-    <menuitem name="List" id="partidak.menu_1_list" parent="partidak.menu_1"
-              action="partidak.action_window"/>
-    <menuitem name="Server to list" id="partidak" parent="partidak.menu_2"
-              action="partidak.action_server"/>
--->
+    <record model="ir.ui.view" id="partidak.list">
+      <field name="name">partidak.partida.view.tree</field>
+      <field name="model">partidak.partida</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="puntuazioa"/> 
+          <field name="kills"/>
+          <field name="time"/>
+          <field name="date"/>
+          <field name="res_partner_id"/>
+
+        </tree>
+      </field>
+    </record>
+
+
+
+
+    <!-- MENU DECLARATION -->
+
+    <!-- Action opening views on models -->
+
+      <record model="ir.actions.act_window" id="partidak.action_window">
+      <field name="name">Partiden Zerrenda</field>
+      <field name="res_model">partidak.partida</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+   
+    <menuitem name="partidak" id="partidak.menu_root" action="partidak.action_window"/>
+    
   </data>
 </odoo>
