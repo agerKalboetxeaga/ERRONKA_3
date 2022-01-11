@@ -22,7 +22,7 @@ import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 
 //miratelo en clase anda...
 public class MongoDBConn {
-	private final String URI = "mongodb://192.168.1.52:27017/";
+	private final String URI = "mongodb://localhost:27017/";
 	
 	private MongoDatabase database;
 	
@@ -37,9 +37,9 @@ public class MongoDBConn {
 		CodecRegistry pojoCodecRegistry = fromRegistries(getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
 		
 		try(MongoClient mongoClient = MongoClients.create(URI)){
-			database = mongoClient.getDatabase("DisunityOfPepe3").withCodecRegistry(pojoCodecRegistry);
+			database = mongoClient.getDatabase("partidak").withCodecRegistry(pojoCodecRegistry);
 
-			MongoCollection<Partida> collection = database.getCollection("partidak",Partida.class);
+			MongoCollection<Partida> collection = database.getCollection("puntuazioak",Partida.class);
 			
 		
 			collection.find().into(partidak); //employee da null

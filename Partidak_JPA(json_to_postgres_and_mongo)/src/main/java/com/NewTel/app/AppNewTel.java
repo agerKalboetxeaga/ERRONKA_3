@@ -1,10 +1,14 @@
 package com.NewTel.app;
 
 import java.io.*;
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.Semaphore;
@@ -55,9 +59,9 @@ public class AppNewTel {
 
     //ArrayListak
 
-    public static List<ResPartner> employees;
-    public static List<PartidakPartida> partidak;
-
+    public static List<ResPartner> employees = new ArrayList<ResPartner>();
+    public static List<PartidakPartida> partidak = new ArrayList<PartidakPartida>();
+    public static int count = 2;
     //Booleano batzuk
     //xml-en  rutak
 
@@ -91,7 +95,7 @@ public class AppNewTel {
             @Override
             public synchronized void run() { //creo que si no se sincronizan se peta en el logeo del postgres?
                 try {
-                    String command = "bash mongolize.sh " + fileName + " 2>&1"; //no es este pero bueno...  [2>&1 es para ocultar el output de consola (bash)]
+                    String command = "bash ./mongolize.sh " + fileName + " 2>&1"; //no es este pero bueno...  [2>&1 es para ocultar el output de consola (bash)]
 
                     Process mongolize = Runtime.getRuntime().exec(command); //y el programita hace su magia...
 
@@ -191,9 +195,9 @@ public class AppNewTel {
             });
 */
 
-            Thread partidakUpdate = new Thread(new Runnable() {
-                @Override
-                public void run() {
+            //Thread partidakUpdate = new Thread(new Runnable() {
+               // @Override
+               // public void run() {
                     try {
                         s.acquire();
                     } catch (InterruptedException e) {
@@ -202,16 +206,17 @@ public class AppNewTel {
                     if (partidak != null) {
                         for (PartidakPartida p : partidak)
                             partidakDao.update(p);
+                        
                     }
                     s.release();
-                }
-            });
+                //}
+           // });
 
             //partnerUpdate.start();
             //partnerUpdate.join();                                   //Haria hasi eta itxaron amaitu harte
 
-            partidakUpdate.start();
-            partidakUpdate.join();
+           // partidakUpdate.start();
+          
             //programa un proceso pa ke ejecute el "mongolizador"
 
         } catch (Exception ex) {
@@ -442,6 +447,23 @@ public class AppNewTel {
             try (FileReader jsonFile = new FileReader(args[1])) {
 
                 readJson(jsonFile);
+                
+                Runnable mongolize = new Runnable() {
+                    @Override
+                    public void run() {
+         
+                        mongolize(args[1]);
+                    }
+                };
+                Runnable updatedb = new Runnable() {
+                    @Override
+                    public void run() {
+                        updateDB();
+                    }
+                };
+
+                mongolize.run();
+                updatedb.run();
 
             } catch (Exception e) {
 
@@ -531,16 +553,28 @@ public class AppNewTel {
             Object obj = jsonParser.parse(jFile);
 
             JSONObject fitxategia = (JSONObject) obj;
-            JSONObject langilea = (JSONObject) fitxategia.get("Langilea");
-            ObjectMapper objectMapper = new ObjectMapper();
+            JSONObject langilea = (JSONObject) fitxategia.get("employee");
+            //ObjectMapper objectMapper = new ObjectMapper();
 
 
             /*
             * Esto convierte directamente los objetos json en objetos java
             *  */
-            employees.add(objectMapper.readValue((DataInput) langilea, ResPartner.class)); //hope it works :`) jej
-            partidak.add(objectMapper.readValue((DataInput) fitxategia, PartidakPartida.class));
-
+            DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+            Date date= new Date();
+			try {
+				date = dateFormat.parse((String) fitxategia.get("date"));
+			} catch (java.text.ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+            long finDate = date.getTime();
+            ResPartner employee = new ResPartner(Integer.parseInt((String)langilea.get("id")), (String)langilea.get("name"),(String) langilea.get("zip"), (String)langilea.get("city"),(String) langilea.get("email"),(String) langilea.get("phone"));
+            employees.add(employee);
+            partidak.add(new PartidakPartida (count, Integer.parseInt((String)fitxategia.get("puntuazioa")), Integer.parseInt((String)fitxategia.get("kills")), (String) fitxategia.get("time"), new Timestamp(finDate), employee));
+            //employees.add(objectMapper.readValue((DataInput) langilea, ResPartner.class)); //hope it works :`) jej
+            //partidak.add(objectMapper.readValue((DataInput) fitxategia, PartidakPartida.class));
+            count ++;
         } catch (IOException | ParseException e) {
             e.printStackTrace();
         }

@@ -45,7 +45,8 @@ public class PartidakPartida implements Serializable {
 
 	public PartidakPartida() {
 	}
-	public PartidakPartida(int puntuazioa, int kills, String time,Timestamp date, ResPartner langilea ){
+	public PartidakPartida(int id ,int puntuazioa, int kills, String time,Timestamp date, ResPartner langilea ){
+		this.id =id;
 		this.puntuazioa = puntuazioa;
 		this.kills = kills;
 		this.time = time;

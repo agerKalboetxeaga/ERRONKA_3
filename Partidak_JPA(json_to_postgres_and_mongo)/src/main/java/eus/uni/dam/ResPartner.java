@@ -50,18 +50,18 @@ public class ResPartner implements Serializable {
 	@Column(name="create_uid")
 	private Integer createUid;
 
-	@Column(name="credit_limit")
+	/*@Column(name="credit_limit")
 	private double creditLimit;
-
+*/
 	@Column(name="customer_rank")
 	private Integer customerRank;
 
 	@Temporal(TemporalType.DATE)
 	private Date date;
-
+/*
 	@Column(name="debit_limit")
 	private BigDecimal debitLimit;
-
+*/
 	@Column(name="display_name")
 	private String displayName;
 
@@ -170,7 +170,7 @@ public class ResPartner implements Serializable {
 	private String zip;
 
 	//bi-directional many-to-one association to PartidakPartida
-	@OneToMany(mappedBy="resPartner")
+	@OneToMany(mappedBy="langilea")
 	private List<PartidakPartida> partidakPartidas;
 
 	//bi-directional many-to-one association to ResPartner
@@ -299,14 +299,14 @@ public class ResPartner implements Serializable {
 		this.createUid = createUid;
 	}
 
-	public double getCreditLimit() {
+	/*public double getCreditLimit() {
 		return this.creditLimit;
 	}
 
 	public void setCreditLimit(double creditLimit) {
 		this.creditLimit = creditLimit;
 	}
-
+*/
 	public Integer getCustomerRank() {
 		return this.customerRank;
 	}
@@ -322,7 +322,7 @@ public class ResPartner implements Serializable {
 	public void setDate(Date date) {
 		this.date = date;
 	}
-
+/*
 	public BigDecimal getDebitLimit() {
 		return this.debitLimit;
 	}
@@ -330,7 +330,7 @@ public class ResPartner implements Serializable {
 	public void setDebitLimit(BigDecimal debitLimit) {
 		this.debitLimit = debitLimit;
 	}
-
+*/
 	public String getDisplayName() {
 		return this.displayName;
 	}
@@ -740,5 +740,6 @@ public class ResPartner implements Serializable {
 
 		return resPartners2;
 	}
+
 
 }
