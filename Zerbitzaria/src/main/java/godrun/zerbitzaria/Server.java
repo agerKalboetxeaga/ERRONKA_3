@@ -33,6 +33,8 @@ public class Server {
 				}
 				output.close();
 				clientSocket.close();
+				
+				//JPA STARTS
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

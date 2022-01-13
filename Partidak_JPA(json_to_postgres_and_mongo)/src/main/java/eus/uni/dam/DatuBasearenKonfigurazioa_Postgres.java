@@ -57,6 +57,9 @@ public class DatuBasearenKonfigurazioa_Postgres {
 		Properties additionalProperties = new Properties();
 		additionalProperties.put("hibernate.dialect", env.getProperty("hibernate.dialect"));
 		additionalProperties.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
+		additionalProperties.put("hibernate.generate_statistics", env.getProperty("hibernate.generate_statistics"));
+		additionalProperties.put("hibernate.use_sql_comments", env.getProperty("hibernate.use_sql_comments"));
+		additionalProperties.put("org.hibernate.level", env.getProperty("org.hibernate.level"));
 		additionalProperties.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
 		entityManagerFactory.setJpaProperties(additionalProperties);
 

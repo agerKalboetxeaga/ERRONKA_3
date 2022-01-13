@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3da0316-273b-4795-a341-d4b1552482fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restservice/MongoDBConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restservice/MongoDBConn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/restservice/Partida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/restservice/Partida.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.example/rest-service-complete/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/com.example/rest-service-complete/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/restservice/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/restservice/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/restservice/MongoDBConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/restservice/MongoDBConn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/restservice/Partida.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/restservice/Partida.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Partidak_JPA(json_to_postgres_and_mongo)/src/main/java/com/NewTel/app/AppNewTel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Partidak_JPA(json_to_postgres_and_mongo)/src/main/java/com/NewTel/app/AppNewTel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Zerbitzaria/partidak[2076].json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Zerbitzaria/partidak[34].json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Zerbitzaria/src/main/java/godrun/zerbitzaria/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Zerbitzaria/src/main/java/godrun/zerbitzaria/MainClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Zerbitzaria/src/main/java/godrun/zerbitzaria/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Zerbitzaria/src/main/java/godrun/zerbitzaria/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Zerbitzaria/target/classes/META-INF/maven/godrunner.zerbitzaria/Zerbitzaria/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Zerbitzaria/target/classes/META-INF/maven/godrunner.zerbitzaria/Zerbitzaria/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Zerbitzaria/target/classes/godrun/zerbitzaria/MainClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Zerbitzaria/target/classes/godrun/zerbitzaria/MainClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Zerbitzaria/target/classes/godrun/zerbitzaria/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Zerbitzaria/target/classes/godrun/zerbitzaria/Server.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Client" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

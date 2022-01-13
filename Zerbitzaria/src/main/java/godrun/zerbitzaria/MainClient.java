@@ -10,7 +10,7 @@ public class MainClient {
 
 			public void run() {
 				// TODO Auto-generated method stub
-				 while(!Client.send(new File("prueba.json"))){
+				 while(!Client.send(new File("PartidakPlantilla.json"))){
 	                    try {
 	                        Thread.sleep(50000);
 	                    } catch (InterruptedException e) {
