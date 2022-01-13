@@ -5,13 +5,20 @@ import java.io.OutputStream;
 import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ServerMain {
 
+	public static ServerSocket serverSocket=null;
+	public static Socket clientSocket=null;
+	public static int connexionCount = 0;
+	public static AppNewTel socket=null;
+	
+	
+	
 	public static void main(String[] args) {
-		ServerSocket serverSocket;
-		Socket clientSocket;
-		int connexionCount = 0;
+		
 		
 		
 		try {
@@ -19,17 +26,25 @@ public class ServerMain {
 			System.out.println("[*] Server running on 6689");
 			
 			while(true) {
+				
+				
+				
+				 
 				clientSocket = new Socket();
 				clientSocket = serverSocket.accept();
-				final AppNewTel serverThread = new AppNewTel(connexionCount, clientSocket);			
-				System.out.println("\n[*] New connection made \n\t[IP: " + clientSocket.getInetAddress() + "] [Port: " + clientSocket.getLocalPort() + "]");
-
-				System.setOut(new PrintStream(new OutputStream() { //agurr output
-					  public void write(int b) {
-					    // NO-OP
-						 serverThread.start();
-					  }
-					}));
+				 socket = new AppNewTel(connexionCount, clientSocket);
+				 System.out.println("\n\t[*] New connection made \n\t\t[IP: " + clientSocket.getInetAddress() + "] [Port: " + clientSocket.getPort() + "]");
+				try {
+					Thread.sleep(2500);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				 connexionCount++;
+				//final AppNewTel serverThread = new AppNewTel(connexionCount, clientSocket);			
+				socket.start();
+			
+				clientSocket.close();
 				
 			}
 			
@@ -45,4 +60,6 @@ public class ServerMain {
             }
         });
 	}
+	
+	 
 }

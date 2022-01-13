@@ -107,8 +107,7 @@ public class AppNewTel extends Thread{
 				fos.write(buffer, 0, buffer.length);
 				fos.close();
 				is.close();
-				clientSock.close();
-		
+
 				// JPA STARTS
 				
 				
@@ -151,8 +150,8 @@ public class AppNewTel extends Thread{
 
 			postgres.start();
 			postgres.join();
-			openSound(1); // 2 gemido, 1 success
-			System.exit(1);
+			//openSound(1); // 2 gemido, 1 success
+			//System.exit(1);
 		} catch (Exception e) {
 
 			System.err.println("Error opening file...\n\n");
@@ -180,7 +179,7 @@ public class AppNewTel extends Thread{
 				} catch (IOException e) {
 					System.out.println("\n\nError trying to mongolize file....");
 					e.printStackTrace();
-					System.exit(1);
+				//	System.exit(1);
 				}
 			}
 		});
@@ -250,7 +249,7 @@ public class AppNewTel extends Thread{
 					info = new DataLine.Info(Clip.class, format);
 					clip = (Clip) AudioSystem.getLine(info);
 					clip.open(stream);
-					clip.start();
+					//clip.start();
 					System.out.println("PROGRAM FINISHED");
 					Thread.sleep(200);
 
@@ -264,7 +263,7 @@ public class AppNewTel extends Thread{
 		try {
 			th.start(); // soinuaren haria hasi
 			Thread.sleep(4000); // programa nagusia gelditu soinua erreproduzitzeko 3000 para el otro sonido
-			System.exit(1);
+			//System.exit(1);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
