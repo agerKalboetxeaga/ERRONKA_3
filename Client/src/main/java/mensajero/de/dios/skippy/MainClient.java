@@ -9,6 +9,7 @@ public class MainClient {
 		Thread sender = new Thread(new Runnable() {
 
 			public void run() {
+				while(true){
 				while(!Client.send(new File("PartidakPlantilla.json"))){
                     try {
                         Thread.sleep(50000);
@@ -16,6 +17,12 @@ public class MainClient {
                         e.printStackTrace();
                     }
                 }
+					try {
+                        Thread.sleep(100000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+				}
 				
 			}
 
