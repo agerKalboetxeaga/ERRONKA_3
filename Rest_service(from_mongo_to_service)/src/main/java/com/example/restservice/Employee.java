@@ -7,11 +7,10 @@ import lombok.Data;
 public class Employee {
 	private String id;
 	private String name;
-	private String street;
-	private String zip;
-	private String city;
-	private String email;
-	private String phone;
+	private String jobTitle;
+	private String workPhone;
+	private String workEmail;
+	
 	public Employee() {
 		
 	}
@@ -28,33 +27,22 @@ public class Employee {
 		this.name = name;
 	}
 	public String getStreet() {
-		return street;
+		return jobTitle;
 	}
 	public void setStreet(String street) {
-		this.street = street;
+		this.jobTitle = street;
 	}
 	public String getZip() {
-		return zip;
+		return workPhone;
 	}
 	public void setZip(String zip) {
-		this.zip = zip;
+		this.workPhone = zip;
 	}
 	public String getCity() {
-		return city;
+		return workEmail;
 	}
 	public void setCity(String city) {
-		this.city = city;
+		this.workEmail = city;
 	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public String getMobile_phone() {
-		return phone;
-	}
-	public void setMobile_phone(String mobile_phone) {
-		this.phone = mobile_phone;
-	}
+	
 }

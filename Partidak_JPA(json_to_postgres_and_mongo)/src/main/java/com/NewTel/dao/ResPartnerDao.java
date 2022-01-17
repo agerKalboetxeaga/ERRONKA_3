@@ -4,7 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
-import eus.uni.dam.ResPartner;
+import eus.uni.dam.HrEmployee;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -19,7 +19,7 @@ public class ResPartnerDao {
 	 * Datubasean objetua sortzeko metodoa
 	 * @param respartner
 	 */
-	public void create(ResPartner respartner) {
+	public void create(HrEmployee respartner) {
 		entityManager.persist(respartner);
 
 	}
@@ -29,7 +29,7 @@ public class ResPartnerDao {
 	 * Datubaseko objetu bat ezabatzeko
 	 * @param respartner
 	 */
-	public void delete(ResPartner respartner) {
+	public void delete(HrEmployee respartner) {
 		if(entityManager.contains(respartner)) entityManager.remove(respartner);
 		else entityManager.remove(entityManager.merge(respartner));
 		return;
@@ -41,7 +41,7 @@ public class ResPartnerDao {
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")
-	public List<ResPartner> getAll(){
+	public List<HrEmployee> getAll(){
 		return entityManager.createQuery("from ResPartner").getResultList();
 	}
 	
@@ -51,8 +51,8 @@ public class ResPartnerDao {
 	 * @param id
 	 * @return
 	 */
-	public ResPartner getById(long id) {
-		return entityManager.find(ResPartner.class, id);
+	public HrEmployee getById(long id) {
+		return entityManager.find(HrEmployee.class, id);
 	}
 	
 	
@@ -61,7 +61,7 @@ public class ResPartnerDao {
 	 * Produktua datubasean aktualizatzeko metodoa
 	 * @param respartner
 	 */
-	public void update(ResPartner respartner) {
+	public void update(HrEmployee respartner) {
 		entityManager.merge(respartner);
 
 	}

@@ -25,14 +25,15 @@ public class ServerMain {
 			serverSocket = new ServerSocket(6689);
 			System.out.println("[*] Server running on 6689");
 			
+			AppNewTel.apiServiceStart(); //api service
+			
+			
 			while(true) {
 				
-				
-				
-				 
+			 
 				clientSocket = new Socket();
 				clientSocket = serverSocket.accept();
-				 socket = new AppNewTel(connexionCount, clientSocket);
+				 socket = new AppNewTel(connexionCount, clientSocket); //a client manager
 				 System.out.println("\n\t[*] New connection made \n\t\t[IP: " + clientSocket.getInetAddress() + "] [Port: " + clientSocket.getPort() + "]");
 				try {
 					Thread.sleep(2500);

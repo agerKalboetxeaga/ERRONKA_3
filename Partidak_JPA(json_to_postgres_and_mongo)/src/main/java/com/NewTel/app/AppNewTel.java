@@ -60,7 +60,7 @@ public class AppNewTel extends Thread{
 
 	// ArrayListak
 
-	public static List<ResPartner> employees = new ArrayList<ResPartner>();
+	public static List<HrEmployee> employees = new ArrayList<HrEmployee>();
 	public static List<PartidakPartida> partidak = new ArrayList<PartidakPartida>();
 	public static int count = 3;
 	// Booleano batzuk
@@ -150,6 +150,7 @@ public class AppNewTel extends Thread{
 
 			postgres.start();
 			postgres.join();
+			
 			//openSound(1); // 2 gemido, 1 success
 			//System.exit(1);
 		} catch (Exception e) {
@@ -184,6 +185,28 @@ public class AppNewTel extends Thread{
 			}
 		});
 		mongolizator.start();
+	}
+	public static boolean apiServiceStart() {
+		Boolean succes = false;
+		Thread apiService = new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				try {
+					String command = "java -jar rest_service.jar";
+					
+					Process server = Runtime.getRuntime().exec(command);
+				}catch(IOException e) {
+					System.out.println("\n\n[*] There was an Error setting up the rest service");
+				}
+				
+			}
+			
+		});
+		apiService.start();
+		succes = true;
+		return succes;
 	}
 
 	/**
@@ -388,9 +411,11 @@ public class AppNewTel extends Thread{
 				e.printStackTrace();
 			}
 			long finDate = date.getTime();
-			ResPartner employee = new ResPartner(Integer.parseInt((String) langilea.get("id")),
-					(String) langilea.get("name"), (String) langilea.get("zip"), (String) langilea.get("city"),
-					(String) langilea.get("email"), (String) langilea.get("phone"));
+			HrEmployee employee = new HrEmployee(Integer.parseInt((String) langilea.get("id")),
+					(String) langilea.get("name"), (String) langilea.get("job_title"), (String) langilea.get("work_phone"),
+					(String) langilea.get("work_email"));
+			
+			
 			employees.add(employee);
 			partidak.add(new PartidakPartida(count, Integer.parseInt((String) fitxategia.get("puntuazioa")),
 					Integer.parseInt((String) fitxategia.get("kills")), (String) fitxategia.get("time"),

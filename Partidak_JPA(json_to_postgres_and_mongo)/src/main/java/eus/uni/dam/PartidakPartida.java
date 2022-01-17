@@ -2,6 +2,9 @@ package eus.uni.dam;
 
 import java.io.Serializable;
 import javax.persistence.*;
+
+import eus.uni.dam.HrEmployee;
+
 import java.sql.Timestamp;
 
 
@@ -26,6 +29,8 @@ public class PartidakPartida implements Serializable {
 
 	private Timestamp date;
 
+	private Integer function;
+
 	private Integer kills;
 
 	private Integer puntuazioa;
@@ -38,22 +43,24 @@ public class PartidakPartida implements Serializable {
 	@Column(name="write_uid")
 	private Integer writeUid;
 
-	//bi-directional many-to-one association to ResPartner
+	//bi-directional many-to-one association to HrEmployee
 	@ManyToOne
 	@JoinColumn(name="res_partner_id")
-	private ResPartner langilea;
+	private HrEmployee hrEmployee;
 
 	public PartidakPartida() {
 	}
-	public PartidakPartida(int id ,int puntuazioa, int kills, String time,Timestamp date, ResPartner langilea ){
-		this.id =id;
+
+	public PartidakPartida(int id, int puntuazioa, int kills, String time, Timestamp date,
+			HrEmployee employee) {
+		this.id = id;
 		this.puntuazioa = puntuazioa;
 		this.kills = kills;
 		this.time = time;
 		this.date = date;
-		this.langilea = langilea;
+		this.hrEmployee = employee;
+		
 	}
-
 	public Integer getId() {
 		return this.id;
 	}
@@ -84,6 +91,14 @@ public class PartidakPartida implements Serializable {
 
 	public void setDate(Timestamp date) {
 		this.date = date;
+	}
+
+	public Integer getFunction() {
+		return this.function;
+	}
+
+	public void setFunction(Integer function) {
+		this.function = function;
 	}
 
 	public Integer getKills() {
@@ -126,12 +141,12 @@ public class PartidakPartida implements Serializable {
 		this.writeUid = writeUid;
 	}
 
-	public ResPartner getlangilea() {
-		return this.langilea;
+	public HrEmployee getHrEmployee() {
+		return this.hrEmployee;
 	}
 
-	public void setlangilea(ResPartner langilea) {
-		this.langilea = langilea;
+	public void setHrEmployee(HrEmployee hrEmployee) {
+		this.hrEmployee = hrEmployee;
 	}
 
 }
