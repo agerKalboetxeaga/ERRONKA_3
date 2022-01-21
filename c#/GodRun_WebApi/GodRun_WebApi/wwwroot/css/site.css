@@ -37,8 +37,9 @@ html {
   }
 }
 
+
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
@@ -65,18 +66,27 @@ body {
   margin-bottom: 60px;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #003566;
+
+    color: white !important;
 }
-#searchForm {
-    padding-top: 10%;
+#isaacimg {
+    float: left !important;
+    padding: 10px !important;
+    
+}
+.banner1 {
+    background-color: #003566;
+    width: 100% !important;
 }
 
 .bg-menua {
-    background-color: #dddada !important;
+    background-color: #black !important;
 }
 
 .erlatiboa {
@@ -106,7 +116,7 @@ body {
     padding: 15px;
 }
 .borgona{
-    color:#981212;
+    color:B;
 }
 .nireMenua .active a,
 .nireMenua .active a:hover{
@@ -131,4 +141,18 @@ body {
 .full-width.dropdown > .dropdown-menu > li >a{
     white-space: normal;
 }
+#containerdelCarousel{
+    max-width:100% !important;
+    max-height:100% !important;
+    padding:0 !important;
+}
 
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.cover-container {
+    max-width: 42em;
+    padding: 5em !important;
+    color:white;
+}

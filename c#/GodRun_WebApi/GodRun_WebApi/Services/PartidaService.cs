@@ -10,7 +10,8 @@ namespace GodRun_WebApi.Services
 {
     public class PartidaService : IPartidaService
     {
-        private Uri url = new Uri("http://192.168.65.6:8080/");
+       /* private Uri url = new Uri("http://localhost:8069/");*/
+       private Uri url = new Uri("http://192.168.65.6:8080/");
 
         public async Task<IList<Partida>> GetIzena(string izena)
         {

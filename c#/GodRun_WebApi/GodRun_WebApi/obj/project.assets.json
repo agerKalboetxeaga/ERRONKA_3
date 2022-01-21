@@ -7746,23 +7746,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kalboetxeaga.ager\\.nuget\\packages\\": {},
+    "C:\\Users\\perez.kepa\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kalboetxeaga.ager\\source\\repos\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\c#\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj",
       "projectName": "GodRun_WebApi",
-      "projectPath": "C:\\Users\\kalboetxeaga.ager\\source\\repos\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj",
-      "packagesPath": "C:\\Users\\kalboetxeaga.ager\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kalboetxeaga.ager\\source\\repos\\GodRun_WebApi\\GodRun_WebApi\\obj\\",
+      "projectPath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\c#\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj",
+      "packagesPath": "C:\\Users\\perez.kepa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\c#\\GodRun_WebApi\\GodRun_WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\kalboetxeaga.ager\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\perez.kepa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7835,7 +7835,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
