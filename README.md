@@ -84,7 +84,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/agerKalboetxeaga/ERRONKA_3/blob/main/images/juegoscreen.jpg)
+[![Product Name Screen Shot][product-screenshot]](images/juegoscreen.jpg)
 
 Gure proiektuak oso konpletua da eta erabil erraza:
 
