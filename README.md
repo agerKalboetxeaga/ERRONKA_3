@@ -84,7 +84,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](images/juegoscreen.png)
+[![Product Name Screen Shot][product-screenshot]](images/juegoscreen.jpg)
 
 Gure proiektuak oso konpletua da eta erabil erraza:
 
