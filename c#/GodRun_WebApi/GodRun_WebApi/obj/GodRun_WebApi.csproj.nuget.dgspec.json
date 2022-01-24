@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\ERRONKA_3-main\\c#\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj": {}
+    "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\ERRONKA_3-main\\c#\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj": {
+    "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\ERRONKA_3-main\\c#\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj",
         "projectName": "GodRun_WebApi",
-        "projectPath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\ERRONKA_3-main\\c#\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj",
+        "projectPath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj",
         "packagesPath": "C:\\Users\\perez.kepa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\ERRONKA_3-main\\c#\\GodRun_WebApi\\GodRun_WebApi\\obj\\",
+        "outputPath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\GodRun_WebApi\\GodRun_WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
