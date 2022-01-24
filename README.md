@@ -181,13 +181,13 @@ _Github errepositorioa klonatu hasteko..._
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-###Jokoaren Tutoriala
+### Jokoaren Tutoriala
 Eskuineko geziak nora tiro egin nahi duzun aukeratzeko da. 
 Ezkerreko geziak norabidea ezartzen du.
 Sala bereziak daude (Horiak) eta hauek item batzuk ditu. Item bakoitzak abantail/desabantail desberdinak emango digute gameplay-a hobetzeko
 Sala gorriak daude (Jefea) Behin jefea garaituta (negar egingo duzu 🥲) jokoa amaituko da.
 
-###Zerbitzaria/Web Orria
+### Zerbitzaria/Web Orria
 Lehen esan bezala zabaldu visual eta eclipse. 
 Proiektuak exekutatu (eclipseko proiektua lehenengo).
 <p align="right">(<a href="#top">back to top</a>)</p>
