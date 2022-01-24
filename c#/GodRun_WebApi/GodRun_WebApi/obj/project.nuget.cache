@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6bcrHKBfqQruyPnrXNgz3j0jaNPlQ2Yg9VyO7oG61OglNUPNAZoyl9f3BKzvWO+fM0Ccb+9nW8nSV/YaRx6XUA==",
+  "dgSpecHash": "rJPVg9ii4SGVNZ3H8qKh7Xz4FoiQaq8nv7WCfxkCsiHP9k++mgYHHxV0b/RxRiuyH9LQHtPByhPaD0k3QmHedg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj",
+  "projectFilePath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\ERRONKA_3-main\\c#\\GodRun_WebApi\\GodRun_WebApi\\GodRun_WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\perez.kepa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\perez.kepa\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.13\\microsoft.aspnetcore.cryptography.internal.5.0.13.nupkg.sha512",

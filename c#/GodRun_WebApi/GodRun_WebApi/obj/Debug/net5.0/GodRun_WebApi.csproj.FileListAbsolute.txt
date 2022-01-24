@@ -487,4 +487,4 @@ C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\ERRONKA_3-main\c#\GodRun_WebApi\GodRun_We
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\ERRONKA_3-main\c#\GodRun_WebApi\GodRun_WebApi\obj\Debug\net5.0\ref\GodRun_WebApi.dll
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\ERRONKA_3-main\c#\GodRun_WebApi\GodRun_WebApi\obj\Debug\net5.0\GodRun_WebApi.pdb
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\ERRONKA_3-main\c#\GodRun_WebApi\GodRun_WebApi\obj\Debug\net5.0\GodRun_WebApi.genruntimeconfig.cache
-C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\ERRONKA_3-main\c#\GodRun_WebApi\GodRun_WebApi\obj\Debug\net5.0\Razor\Pages\Tabla.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\ERRONKA_3-main\c#\GodRun_WebApi\GodRun_WebApi\obj\Debug\net5.0\Razor\Pages\Partidak.cshtml.g.cs
