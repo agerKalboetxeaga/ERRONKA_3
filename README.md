@@ -116,39 +116,63 @@ Sekzio honetan proiektuarentzako erabili ditugun lengoaia desberdinak adierazten
 
 
 
+### Prerequisites
+Hasteko bi datubase eta zerbitzu bat izan behar dituzu:
+ * [Odoo 14](https://www.odoo.com/es_ES/page/download) Zerbitzaria [PostgreSQL](https://www.postgresql.org/) abiarazita izan behar duzu
+    (Gomendagarria da datu baseak DisunityOfPepe izena izatea). Ondoren employees modulua instalatu behar da.
+  
+
+* [MongoDB](https://www.mongodb.com/) Datubasea.
+* [Java jdk 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+* [Java IDE bat](https://www.eclipse.org/downloads/)
+
 <!-- GETTING STARTED -->
 ## Getting Started
+Programa hasi baino lehenago zihurtatu Odoo eta MongoDB zerbitzuak abiarazita daudela. Ondoren kanpoko konexioak ahalbideratzeko joan zaitez:
+   ```sh
+  C:\Program Files\MongoDB\Server\5.0\bin\mongod.cfg
+   ```
+   eta bertan "bindIp" eremuan 0.0.0.0 ip-a ezarri.
+  
+Ostean postgreseko konfigurazioa aldatu:
 
-Hasteko bi datubase eta zerbitzu bat izan behar dituzu:
-  - [Odoo 14](https://www.odoo.com/es_ES/page/download) Zerbitzaria [PostgreSQL](https://www.postgresql.org/) abiarazita izan behar duzu
-    (Gomendagarria da datu baseak DisunityOfPepe izena izatea). Ondoren employees modulua instalatu behar da.
-  -
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
+   ```sh
+  C:\Program Files\Odoo\PostgreSQL\data\pg_hba.conf
+   ```
+  fitxategia ireki eta ostean zuk nahi duzun ip-a gehitu:
+  
+   ```sh
+   TYPE  DATABASE        USER            ADDRESS             METHOD
+   host    all           all             <IP>/32              md5
+   ```
+  
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Github errepositorioa klonatu hasteko..._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+* Odoo modulua:
+1. _erronka_DOCS/odoo/_ karpetako partidak kopiatu eta odoo instalatuta duzun karpetako moduluan itxatxi:
+  ```sh
+   C:\Program Files\Odoo\server\odoo\addons  (Windows 7 +)
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+2. Joan odoo serbitzarira web bidez administrari bezala eta ajusteetara joan. "General settings" en azpian "Developer Tools" atalean
+    Developer mode -a aktibatu.
+
+3. Orain aplikazioen kudeaketa horrira joan eta goiko aukeretatik "_Update Apps List_" aukera eman. 
+  
+4. Azkenik aplikazioetan partidak modulua bilatu eta instalatu. _Modulua instalatuta dago_
+ 
+* Android jokoa:
+1. Githubeko errepositorioko _joko.apk_ deskargatu mobilean eta instalatuta izango zenukete.
+* Zerbitzaria:
+1. Java paketean dagoen Main Server proiektua ireki zuk nahi duzun IDE arekin.
+2. Baliteke Datubaseentzako konexioak aldatu behar izana: 
+      Postgreserako (src/main/resources/) application.properties fitxategia (_db.url_ eremua)
+      MongoDB-rako proiektuko karpetan, _mongolize.sh scriptak_ du mongo db ko konexioko ip a
+4. Ondoren java proiektua exekutatu
+5. Orain zerbitzaria martxan dago partidako fitxategiak interzeptatzen eta datu baseetara igotzen. Gainera 8080 portuko zerbitzua abiarazten du.
+6. Azkenik C# proiektua exekutatu eta dena martxan izango duzu. Orain bakarrik jolastea geratzen da.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -157,10 +181,15 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+###Jokoaren Tutoriala
+Eskuineko geziak nora tiro egin nahi duzun aukeratzeko da. 
+Ezkerreko geziak norabidea ezartzen du.
+Sala bereziak daude (Horiak) eta hauek item batzuk ditu. Item bakoitzak abantail/desabantail desberdinak emango digute gameplay-a hobetzeko
+Sala gorriak daude (Jefea) Behin jefea garaituta (negar egingo duzu 🥲) jokoa amaituko da.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+###Zerbitzaria/Web Orria
+Lehen esan bezala zabaldu visual eta eclipse. 
+Proiektuak exekutatu (eclipseko proiektua lehenengo).
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -168,15 +197,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
+- [x] Add Final Boss
 - [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [ ] Implement connections in the game
+- [ ] Finish Web-Page
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/agerKalboetxeaga/ERRONKA_3/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -185,16 +211,8 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+dona dinerito anda que esto a costau
+* _[PayPal](https://www.dafk.net/what/)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -212,9 +230,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Ager Kalboetxeaga - [kalboetxeaga.ager@uni.eus](https://mail.google.com/)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/agerKalboetxeaga/ERRONKA_3](https://github.com/agerKalboetxeaga/ERRONKA_3)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -225,14 +243,11 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Some tutorials we used](https://openwebinars.net/)
+* [Learning bash](https://www.mastermind.ac/)
+* [Other useful tutorials](https://www.mastermind.ac/)
+* [More media](https://elearning20.hezkuntza.net/012053/enrol/index.php?id=31)
+* [For resolving errors](https://stackoverflow.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
