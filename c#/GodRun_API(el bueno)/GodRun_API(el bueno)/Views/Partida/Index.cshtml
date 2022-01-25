@@ -3,47 +3,50 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>
-</h1>
+<h1>Index</h1>
 
-
-
-
-
-
-
-
-
-
-<div class="container ">
-    <h1>Partidas</h1>
-    <table class="table">
-        <thead class="thead-dark">
-            <tr>
-
-                <th scope="col">puntuazioa</th>
-                <th scope="col">kills</th>
-                <th scope="col">time</th>
-                <th scope="col">date</th>
-            </tr>
-        </thead>
-
-
-
-
-
-        <tbody>
-            @foreach (var item in Model.partidak)
-            {
-                <tr>
-                    <th scope="row">@Html.DisplayFor(modelItem => item.puntuazioa)</th>
-                    <td>@Html.DisplayFor(modelItem => item.kills)</td>
-                    <td>@Html.DisplayFor(modelItem => item.time)</td>
-                    <td>@Html.DisplayFor(modelItem => item.date)</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-
-</div>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               <p>puntuazioa</p>
+            </th>
+            <th>
+                <p>kills</p>
+            </th>
+            <th>
+                <p>time</p>
+            </th>
+            <th>
+                <p>date</p>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.partidak) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.puntuazioa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kills)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.date)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

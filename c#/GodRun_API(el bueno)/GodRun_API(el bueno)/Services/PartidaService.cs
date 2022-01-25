@@ -45,16 +45,18 @@ namespace GodRun_WebApi.Services
 
         public async Task<IList<Partida>> GetPartidas()
         {
-            List<Partida> partidaList = new List<Partida>();
+            List<Partida> partida_List = new List<Partida>();
+            Uri rutapartida_ind = new Uri(url, "partidak/"); //ruta donde miraremos por string se
+
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync(url))//ensi rutapartida_ind
+                using (var response = await httpClient.GetAsync(rutapartida_ind))//ensi rutapartida_ind
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                    partidaList = JsonConvert.DeserializeObject<List<Partida>>(apiResponse);
+                    partida_List = JsonConvert.DeserializeObject<List<Partida>>(apiResponse);
                 }
             }
-            return partidaList;
+            return partida_List;
         }
     }
 }

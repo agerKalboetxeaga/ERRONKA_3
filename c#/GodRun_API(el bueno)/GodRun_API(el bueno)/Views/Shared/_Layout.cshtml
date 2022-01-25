@@ -47,7 +47,9 @@
                             <a class="nav-link" href="~/">Home </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Partidak</a>
+                            <a class="nav-link" asp-controller="AllPartida" asp-action="Index" >Partidak</a>
+                            <!--Metodo para enseñar las partidas-->
+                            <a class="dropdown-item" asp-controller="Partida" asp-action="Index"></a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -55,7 +57,7 @@
                                 Top Gamers
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                               
+                                <a class="dropdown-item" href="#">Action</a>
 
                                 @await Component.InvokeAsync("Partidak", new { id = 1 })
 
@@ -67,7 +69,7 @@
                                 Top Games
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              
+                                <a class="dropdown-item" href="#">Action</a>
 
                                 @await Component.InvokeAsync("Jokalariak", new { id = 1 })
 
