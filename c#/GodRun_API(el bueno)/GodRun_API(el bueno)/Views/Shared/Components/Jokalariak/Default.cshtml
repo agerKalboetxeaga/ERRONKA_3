@@ -5,22 +5,15 @@
 }
 
 
-<ul class="dropdown-menu">
-    <li>
-        <div class="container padinaMenu">
-            <div class="col-md4 nireMenua">
-                <h5 class="borgona">Games: </h5>
+
                 @foreach (var item in Model)
                 {
                     @if (item.puntuazioa > 50000)
                     {
-            <a href="@item.employee.name">@Html.DisplayFor(modelItem => item.employee.name) ->  @Html.DisplayFor(modelItem => item.puntuazioa)</a>
+            <a class="dropdown-item" href="@item.employee.name">@Html.DisplayFor(modelItem => item.employee.name) ->  @Html.DisplayFor(modelItem => item.puntuazioa)</a>
                     }
                 }
-            </div>
-        </div>
-    </li>
-</ul>
+
 
 <!--
 <table class="table">

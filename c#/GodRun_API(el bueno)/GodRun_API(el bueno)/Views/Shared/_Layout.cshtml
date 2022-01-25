@@ -31,94 +31,65 @@
             </div>
         </div>
     </div>
-    <!-- <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white ">
-        <div class="container">
-            <a class="navbar-brand" asp-area="" asp-page="/Index">God Runner</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Partidak</a>
-                    </li>
-                </ul>
-                <partial name="Login/Login" />
 
-            </div>
-        </div>
-    </nav>-->
 
 
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-menua" style="background-color: #174774">
             <div class="container">
-
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse erlatiboa" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-
-
-
-
-                        <li class="nav-item full-width">
-                            <a class="nav-link " href="~/" id="navbarDropdown" role="button">
-                                Home
-
-                            </a>
-                            <!--Hemen konponenteari deia-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/">Home </a>
                         </li>
-                        <li class="nav-item full-width">
-                            <a class="nav-link " href="#" id="navbarDropdown" role="button">
-                                Partidak
-                            </a>
-                            <!--Hemen konponenteari deia-->
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Partidak</a>
                         </li>
 
-
-                        <li class="nav-item dropdown full-width">
-                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Top Gamers
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Top Games
                             </a>
-                            <!--Hemen konponenteari deia Esto es para mostrar partidas-->
-                            @await Component.InvokeAsync("Partidak", new { id = 1 })
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
 
+                                @await Component.InvokeAsync("Partidak", new { id = 1 })
+
+                            </div>
                         </li>
-                        <li class="nav-item dropdown full-width">
+
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Top Worst Games
                             </a>
-                            <!--Hemen konponenteari deia-->
-                            @await Component.InvokeAsync("Jokalariak", new { id = 1 })
-                        </li>
-                        <li class="nav-item dropdown full-width">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Competitive
-                            </a>
-                            <!--Hemen konponenteari deia-->
-                        </li>
-                        <li class="nav-item dropdown full-width">
-                            <a class="nav-link " href="Lore/lore" role="button" aria-haspopup="true" aria-expanded="false">
-                                Lore
-                            </a>
-                            <!--Hemen konponenteari deia-->
-                        </li>
-                    </ul>
-                    <!-- <form class="form-inline  float-right" id="searchForm">
-                        <input class="form-control mr-sm-2" type="search" aria-label="Search">
-                        <button class="btn btn-outline-primary  my-sm-0"><i class="fas fa-search"></i></button>
-                    </form>-->
-                </div>
-            </div>
-        </nav>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
 
+                                @await Component.InvokeAsync("Jokalariak", new { id = 1 })
+
+                            </div>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="Lore/lore">Competitive</a>
+
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="Lore/lore">Lore</a>
+
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+                </div>
+
+        </nav>
         <div class="collapse navbar-collapse erlatiboa" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="dropdown active full-width">
@@ -132,6 +103,10 @@
             @RenderBody()
         </main>
     </div>
+   
+
+
+
 
 
 

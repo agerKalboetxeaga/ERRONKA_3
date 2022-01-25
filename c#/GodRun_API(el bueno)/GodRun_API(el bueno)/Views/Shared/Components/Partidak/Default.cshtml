@@ -5,11 +5,7 @@
 }
 
 
-    <ul class="dropdown-menu">
-        <li>
-            <div class="container padinaMenu">
-                <div class="col-md4 nireMenua">
-                    <h5 class="borgona">Players: </h5>
+  
                     @foreach (var item in Model)
                     {
                         @if (item.puntuazioa > 50000)
@@ -17,13 +13,10 @@
                         {
 
                             <!--  @Html.ActionLink(item.employee.name, "Partida", "Index", new { langilea = item.employee.name }) -->
-                            <a asp-controller="Partida" asp-action="Index" asp-route-langilea="@item.employee.name"> @Html.DisplayFor(modelItem => item.employee.name)</a>
+                            <a class="dropdown-item" asp-controller="Partida" asp-action="Index" asp-route-langilea="@item.employee.name"> @Html.DisplayFor(modelItem => item.employee.name)</a>
                         }
                     }
-                </div>
-        </div>
-    </li>
-</ul>
+
 
 <!--
 <table class="table">
