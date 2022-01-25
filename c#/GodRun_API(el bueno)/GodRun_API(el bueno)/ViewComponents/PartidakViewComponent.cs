@@ -1,4 +1,5 @@
-﻿using GodRun_WebApi.Services;
+﻿using GodRun_WebApi.Models;
+using GodRun_WebApi.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,21 @@ namespace GodRun_WebApi.ViewComponents
         }
         public async Task<IViewComponentResult> InvokeAsync(int id)
         {
-            return View(await _partidaService.GetMota(id));
+            IList<Partida> partidak = await _partidaService.GetMota(id);
+            List<Partida> partidakClean = partidak.ToList();
+            List<String> names = new List<String>();
+            foreach(Partida p in partidakClean){
+                if (!names.Contains(p.employee.name))
+                {
+                    names.Add(p.employee.name);
+                }
+                else
+                {
+                    partidak.Remove(p);
+                }
+                
+            }
+            return View(partidak);
         }
 
     }

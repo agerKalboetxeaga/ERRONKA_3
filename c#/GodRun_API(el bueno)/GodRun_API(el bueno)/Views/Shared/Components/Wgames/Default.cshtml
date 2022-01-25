@@ -1,22 +1,27 @@
 ﻿@model IEnumerable<GodRun_WebApi.Models.Partida>
-
 @{
-    ViewData["Title"] = "Partidak";
+    ViewData["Title"] = "Jokalariak";
 }
 
 
+<ul class="dropdown-menu">
+    <li>
+        <div class="container padinaMenu">
+            <div class="col-md4 nireMenua">
+                <h5 class="borgona">Games: </h5>
+                @foreach (var item in Model)
+                {
+                    @if (item.puntuazioa < 50000)
+                    {
+                        <a> @Html.DisplayFor(modelItem => item.employee.name) ->  @Html.DisplayFor(modelItem => item.puntuazioa)</a>
 
-@foreach (var item in Model)
-{
-    @if (item.puntuazioa > 50000)
-
-    {
-
-        <!--  @Html.ActionLink(item.employee.name, "Partida", "Index", new { langilea = item.employee.name }) -->
-        <a class="dropdown-item" asp-controller="Partida" asp-action="Index" asp-route-langilea="@item.employee.name"> @Html.DisplayFor(modelItem => item.employee.name)</a>
-    }
-}
-
+                        @Html.ActionLink("ikusi", "Index", "Partida_bakoitza", new { puntuazioa = item.puntuazioa, kills = item.kills, time = item.time, date = item.date, izena = item.employee.name, jobTitle = item.employee.jobTitle, workPhone = item.employee.workPhone, workEmail = item.employee.workEmail })
+                    }
+                }
+            </div>
+        </div>
+    </li>
+</ul>
 
 <!--
 <table class="table">

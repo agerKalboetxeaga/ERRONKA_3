@@ -52,7 +52,7 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Top Games
+                                Top Gamers
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Action</a>
@@ -64,12 +64,23 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Top Worst Games
+                                Top Games
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Action</a>
 
                                 @await Component.InvokeAsync("Jokalariak", new { id = 1 })
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Worst Games
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+
+                                @await Component.InvokeAsync("Wgames", new { id = 1 })
 
                             </div>
                         </li>
@@ -87,7 +98,7 @@
                     </ul>
 
                 </div>
-                </div>
+            </div>
 
         </nav>
         <div class="collapse navbar-collapse erlatiboa" id="bs-example-navbar-collapse-1">
@@ -103,7 +114,7 @@
             @RenderBody()
         </main>
     </div>
-   
+
 
 
 
