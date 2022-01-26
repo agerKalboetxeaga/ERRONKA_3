@@ -1,5 +1,6 @@
 using GodRun_API_el_bueno_.Data;
 using GodRun_API_el_bueno_.Models;
+using GodRun_API_el_bueno_.Services;
 using GodRun_WebApi.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,7 +31,10 @@ namespace GodRun_API_el_bueno_
         public void ConfigureServices(IServiceCollection services)
         {
             //Zerbitzuak injektatzeko
+            //partida
             services.AddScoped<IPartidaService, PartidaService>();
+            //Inkesta
+            services.AddScoped<IInkestaService, InkestaService>();
             //Sessions gehitzen
             services.AddDistributedMemoryCache();
             services.AddSession();

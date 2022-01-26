@@ -15,7 +15,7 @@ namespace GodRun_API_el_bueno_.Models
         public string Galdera3 { get; set; }
         public string Galdera4 { get; set; }
         public string Galdera5 { get; set; }
-        public string User { get; set; }
+        public string Erabiltzailea { get; set; }
         public System.DateTime Data { get; set; }
 
     }

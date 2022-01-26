@@ -33,7 +33,7 @@ namespace GodRun_API_el_bueno_.Controllers
             if (ModelState.IsValid)
             {
                 /* Inkesta gorde*/
-                inkesta.User = HttpContext.User.Identity.Name;
+                inkesta.Erabiltzailea = HttpContext.User.Identity.Name;
                 inkesta.Data = DateTime.Now;
                 await _inkestaService.InkestaGehitu(inkesta);
                 return RedirectToPage("Index");
