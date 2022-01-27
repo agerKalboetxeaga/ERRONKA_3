@@ -11,9 +11,11 @@ namespace GodRun_API_el_bueno_
 {
     public class Program
     {
+
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -22,5 +24,8 @@ namespace GodRun_API_el_bueno_
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+
+
     }
 }
