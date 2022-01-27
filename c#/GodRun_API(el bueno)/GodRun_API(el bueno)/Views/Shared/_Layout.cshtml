@@ -47,7 +47,7 @@
                             <a class="nav-link" href="~/">Home </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" asp-controller="AllPartida" asp-action="Index" >Games</a>
+                            <a class="nav-link" asp-controller="AllPartida" asp-action="Index">Games</a>
                             <!--Metodo para enseñar las partidas-->
                             <a class="dropdown-item" asp-controller="Partida" asp-action="Index"></a>
                         </li>
@@ -57,7 +57,7 @@
                                 Top Gamers
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     
+
 
                                 @await Component.InvokeAsync("Partidak", new { id = 1 })
 
@@ -69,7 +69,7 @@
                                 Top Games
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            
+
 
                                 @await Component.InvokeAsync("Jokalariak", new { id = 1 })
 
@@ -86,16 +86,13 @@
 
                             </div>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="Lore/lore">Competitive</a>
-
-                        </li>
+                      
                         <li class="nav-item ">
                             <a class="nav-link" href="Lore/lore">Lore</a>
 
                         </li>
 
-
+                        <partial name="_LoginPartial" />
 
                     </ul>
 
