@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\folder2Change\\aber\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj": {}
+    "C:\\Users\\kalboetxeaga.ager\\source\\repos\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj": {}
   },
   "projects": {
-    "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\folder2Change\\aber\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj": {
+    "C:\\Users\\kalboetxeaga.ager\\source\\repos\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\folder2Change\\aber\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
+        "projectUniqueName": "C:\\Users\\kalboetxeaga.ager\\source\\repos\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
         "projectName": "GodRun_API(el bueno)",
-        "projectPath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\folder2Change\\aber\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
-        "packagesPath": "C:\\Users\\perez.kepa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\folder2Change\\aber\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\obj\\",
+        "projectPath": "C:\\Users\\kalboetxeaga.ager\\source\\repos\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
+        "packagesPath": "C:\\Users\\kalboetxeaga.ager\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kalboetxeaga.ager\\source\\repos\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\perez.kepa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kalboetxeaga.ager\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

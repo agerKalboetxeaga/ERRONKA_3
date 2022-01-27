@@ -19,5 +19,15 @@ namespace GodRun_API_el_bueno_.Services
         {
             _context.Add(inkesta);
         }
+
+        public async Task<List<Inkesta>> InkestaIkusi()
+        {
+            return _context.Inkesta.ToList();
+        }
+
+        public async Task<List<Inkesta>> InkestaIkusiUser(string user)
+        {
+            return _context.Inkesta.Where(i => i.Erabiltzailea == user).ToList();
+        }
     }
 }
