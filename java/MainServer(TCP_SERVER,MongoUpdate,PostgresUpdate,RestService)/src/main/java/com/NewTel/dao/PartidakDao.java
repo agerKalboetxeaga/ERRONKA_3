@@ -7,6 +7,13 @@ import eus.uni.dam.PartidakPartida;
 
 import org.springframework.stereotype.Repository;
 
+
+/**
+ * DAO class to manage the upload of data to PostgreSQL
+ * 
+ * @author kalboetxeaga.ager
+ *
+ */
 @Repository
 @Transactional
 public class PartidakDao {

@@ -4,10 +4,12 @@ import java.util.Date;
 
 import lombok.Data;
 
-
-
-
-
+/**
+ * This class is the model for Partidak.
+ * 
+ * @author kalboetxeaga.ager
+ *
+ */
 @Data
 public class Partida {
 	private String puntuazioa;

@@ -7,13 +7,14 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 
 
+/**
+ * This component is used when this application is launched as a jar.
+ * @author kalboetxeaga.ager
+ *
+ */
 @Component
 public class RunHelper {
-//    @Value("\t -b \t\t |Bezeroak exportatzeko\n" +
-//            "\t -s \t\t |Salmentak exportatzeko\n" +
-//            "\t -p \t\t |Produktuak exportatzeko\n" +
-//            "\t -a \t\t |Denak exportatzeko" +
-//            "\t -h/-help")
+         
     private String helper;
 
     @PostConstruct

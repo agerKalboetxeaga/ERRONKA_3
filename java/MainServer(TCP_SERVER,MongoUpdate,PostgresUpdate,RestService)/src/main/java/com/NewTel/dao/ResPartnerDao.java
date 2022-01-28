@@ -7,6 +7,13 @@ import javax.transaction.Transactional;
 import eus.uni.dam.HrEmployee;
 import org.springframework.stereotype.Repository;
 
+
+/**
+ *  DAO class to manage the upload of data to PostgreSQL
+ * 
+ * @author kalboetxeaga.ager
+ *
+ */
 @Repository
 @Transactional
 public class ResPartnerDao {

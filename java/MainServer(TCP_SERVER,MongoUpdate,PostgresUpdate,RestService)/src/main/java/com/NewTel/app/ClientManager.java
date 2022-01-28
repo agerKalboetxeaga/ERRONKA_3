@@ -50,7 +50,7 @@ import org.json.simple.parser.ParseException;
 
 @ComponentScan(basePackages = { "eus.uni.dam" })
 @SpringBootApplication
-public class AppNewTel extends Thread{
+public class ClientManager extends Thread{
 	// Aldagaien deklarazioa
 
 	public static ResPartnerDao resPartnerDao;
@@ -74,44 +74,37 @@ public class AppNewTel extends Thread{
 	private String fileName;
 	
 	
-	public AppNewTel(int threadnum, Socket s) {
-
-		
-		// programa nagusia baino garrantzitsuagoa izango da eta hasieratik entzungo da
-		
-		
-		
-		
+	/**
+	 * The constructor will receive the clients socket and the thread number.
+	 * @param threadnum Thread number on the main server (num of accepted connections)
+	 * @param s Is the socket of the client
+	 */
+	public ClientManager(int threadnum, Socket s) {
 		
 		try {
-			//ServerSocket serverSock = new ServerSocket(serverPort);
-			//System.out.println("[*] Server Running on " + serverPort);
-
-			//while (true) {
+			
 				DateFormat dateFormat = new SimpleDateFormat("yyyy_mm_dd-hh_mm_ss");
 				int num = (int) (Math.random() * 2500 + 1);
 				Date data = new Date();
 				String finalDate = dateFormat.format(data);
+				
+				//Setting the final name to the file received from the client
 				fileName = "partidak[" + num + "](" + finalDate + ").json";
 
 				 this.clientSock = s;
 
 				InputStream is = clientSock.getInputStream(); // getting client input stream
 				
-				FileOutputStream fos = new FileOutputStream(fileName); // creating an output stream with the name of the
+				FileOutputStream fos = new FileOutputStream(fileName); // creating an output stream with the name of the file
 				
-				 // transferred file
+				//buffer to read the bytes of the file
 				byte[] buffer = is.readAllBytes();
 				
-				
+				//writing the buffer from the beginning to the end to the Output Stream
 				fos.write(buffer, 0, buffer.length);
 				fos.close();
 				is.close();
 
-				// JPA STARTS
-				
-				
-			//}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -120,15 +113,19 @@ public class AppNewTel extends Thread{
 	
 
 	}
+	/**
+	 * This run method will launch a JPA 
+	 */
 	public void run() {
-		//java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.OFF);
+		//configuring the beans and DAO context 
 		appContext = new AnnotationConfigApplicationContext(DatuBasearenKonfigurazioa_Postgres.class); // kontextua
 		runHelper = appContext.getBean(RunHelper.class);
 		resPartnerDao = appContext.getBean(ResPartnerDao.class);
 		partidakDao = appContext.getBean(PartidakDao.class);
-
+		
+		
 		try (FileReader file = new FileReader(fileName)) {
-
+			//reading the recently created Json file 
 			readJson(file);
 
 			Runnable mongolize = new Runnable() {
@@ -146,13 +143,12 @@ public class AppNewTel extends Thread{
 			};
 			Thread mongo = new Thread(mongolize);
 			Thread postgres = new Thread(updatedb);
+			//running threads
 			mongo.start();
 
 			postgres.start();
 			postgres.join();
 			
-			//openSound(1); // 2 gemido, 1 success
-			//System.exit(1);
 		} catch (Exception e) {
 
 			System.err.println("Error opening file...\n\n");
@@ -161,9 +157,9 @@ public class AppNewTel extends Thread{
 	}
 
 	/**
-	 * This method will execute a prgogram to upload json data to mongo database
+	 * This method will execute a program to upload json data to mongoDB database
 	 * 
-	 * @param fileName
+	 * @param fileName name of the json file
 	 */
 	private static void mongolize(String fileName) {
 		Thread mongolizator = new Thread(new Runnable() {
@@ -186,6 +182,11 @@ public class AppNewTel extends Thread{
 		});
 		mongolizator.start();
 	}
+	
+	/**
+	 * method to Run the web service from jar as a thread
+	 * @return success true if the service is up
+	 */
 	public static boolean apiServiceStart() {
 		Boolean succes = false;
 		Thread apiService = new Thread(new Runnable() {
@@ -247,54 +248,10 @@ public class AppNewTel extends Thread{
 		return success;
 	}
 
-	/**
-	 * Metodo honek soinu bat abiarazten du hari moduan
-	 */
-	public static void openSound(int soundType) {
-		Thread th = new Thread(new Runnable() {
-			@Override
-			public void run() {
-				try {
-					File sound = null;
-					if (soundType == 1) {
-						sound = new File("sounds/Download_succeed.wav");
-					} else if (soundType == 2) { // fitxategia asignatu
-						sound = new File("sounds/Gemidos.wav");
-
-					}
-					AudioInputStream stream; // Audio motako stream bat sortu
-					AudioFormat format; // Formatua ezartzeko (wav)
-					DataLine.Info info; // Clip klaseak behar duen soinuaren konfigurazio informazioa
-					Clip clip; // wav fitxategia kudeatzeko klasea
-
-					stream = AudioSystem.getAudioInputStream(sound);
-					format = stream.getFormat();
-					info = new DataLine.Info(Clip.class, format);
-					clip = (Clip) AudioSystem.getLine(info);
-					clip.open(stream);
-					//clip.start();
-					System.out.println("PROGRAM FINISHED");
-					Thread.sleep(200);
-
-				} catch (Exception e) {
-					// whatevers
-					e.printStackTrace();
-				}
-			}
-		});
-
-		try {
-			th.start(); // soinuaren haria hasi
-			Thread.sleep(4000); // programa nagusia gelditu soinua erreproduzitzeko 3000 para el otro sonido
-			//System.exit(1);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-
-	}
+	
 
 	/**
-	 * Metodo honek log fitxategi bat sortzen du xml formatuan
+	 * Metodo honek log fitxategi bat sortzen du xml formatuan (ez da erabiltzen)
 	 */
 	public static void logMaker() {
 
@@ -382,7 +339,7 @@ public class AppNewTel extends Thread{
 	} // working...
 
 	/**
-	 * Programa exekutatzerakoan erabiltzaileak sartutako inputa kudeatzen duen
+	 * Programa exekutatzerakoan erabiltzaileak sartutako fitxategia irakurtzen duen
 	 * metodoa
 	 *
 	 * @param args user provided arguments
@@ -420,10 +377,7 @@ public class AppNewTel extends Thread{
 			partidak.add(new PartidakPartida(count, Integer.parseInt((String) fitxategia.get("puntuazioa")),
 					Integer.parseInt((String) fitxategia.get("kills")), (String) fitxategia.get("time"),
 					new Timestamp(finDate), employee));
-			// employees.add(objectMapper.readValue((DataInput) langilea,
-			// ResPartner.class)); //hope it works :`) jej
-			// partidak.add(objectMapper.readValue((DataInput) fitxategia,
-			// PartidakPartida.class));
+			
 			count++;
 		} catch (IOException | ParseException e) {
 			e.printStackTrace();

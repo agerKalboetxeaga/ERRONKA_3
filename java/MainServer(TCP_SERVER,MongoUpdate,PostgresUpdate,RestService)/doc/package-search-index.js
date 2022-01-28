@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"appSystem"},{"l":"com.NewTel.app"},{"l":"com.NewTel.dao"},{"l":"com.NewTel.song"},{"l":"eus.uni.dam"},{"l":"mongolizador"}];updateSearchResults();

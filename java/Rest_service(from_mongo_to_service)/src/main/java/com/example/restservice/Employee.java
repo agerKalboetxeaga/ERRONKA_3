@@ -1,8 +1,12 @@
 package com.example.restservice;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-
+/**
+ * This class is the model for Employee.
+ * 
+ * @author kalboetxeaga.ager
+ *
+ */
 @Data
 public class Employee {
 	private String id;

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+<data>
+	<!-- Definimos categoria de seguridad-->
+	<record model="ir.module.category" id="partidak.module_category_partidak">
+		<field name="name">Partidak</field>
+		<field name="description">Begiratu jorastu diren partidak</field>
+		<field name="sequence">200</field> 
+	</record>
+	
+	<record model="res.groups" id="group_partidak_user">
+		<field name="name">User</field>
+		<field name="category_id" ref="partidak.module_category_partidak"/>
+		<field name="comment">Usuarios que gestionan las partidas</field>
+		<field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+	</record>
+
+	<record model="res.groups" id="group_partidak_admin">
+		<field name="name">Admin</field>
+		<field name="category_id" ref="partidak.module_category_partidak"/>
+		<field name="comment">Usuarios que gestionan las partidas</field>
+		<!--Los miembris dek grupo admin tambien son usuarios -->
+		<field name="implied_ids" eval="[(4, ref('group_partidak_user'))]" />
+		<!--Añadimos a los usuarios administradores de Odoo -->
+		<field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]" />
+	</record>
+</data>
+</odoo>
+

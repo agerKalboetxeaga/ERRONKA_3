@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_partidak_partidak,partidak.partidak,model_partidak_partidak,base.group_user,1,1,1,1
+access_partidak_partida_user,partidak.partida.user,model_partidak_partida,partidak.group_partidak_user,1,1,1,1
+access_partidak_partida_admin,partidak.partida.admin,model_partidak_partida,partidak.group_partidak_admin,1,1,1,1
