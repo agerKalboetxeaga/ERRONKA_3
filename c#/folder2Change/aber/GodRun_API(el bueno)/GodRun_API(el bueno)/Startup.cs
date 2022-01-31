@@ -33,6 +33,8 @@ namespace GodRun_API_el_bueno_
             //Zerbitzuak injektatzeko
             //partida
             services.AddScoped<IPartidaService, PartidaService>();
+            //comments
+            services.AddScoped<IComentsService, ComentsService>();
             //Inkesta
             services.AddScoped<IInkestaService, InkestaService>();
             //Sessions gehitzen

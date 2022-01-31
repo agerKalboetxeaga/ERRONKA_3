@@ -27,10 +27,12 @@
         </tr>
     </thead>
     <tbody>
+       
         @if (Model.partidak.Count <= 10)
         {
             @foreach (var item in Model.partidak.OrderByDescending(a => a.puntuazioa))
             {
+           
                 <tr>
                     <td>
                         @Html.DisplayFor(modelItem => item.puntuazioa)
@@ -57,10 +59,12 @@
         }
         else
         {
-            @for(int index=0; index < 10; index++)
+            @for (int index = 0; index < 10; index++)
             {
+                @partidak.Add(Model.partidak.OrderByDescending(a => a.puntuazioa).ElementAt(index))
                 <tr>
                     <td>
+
                         @Html.DisplayFor(modelItem => Model.partidak.OrderByDescending(a => a.puntuazioa).ElementAt(index).puntuazioa)
                     </td>
                     <td>
@@ -80,9 +84,10 @@
                 </tr>
             }
         }
-        @await Component.InvokeAsync("Comments")
+
     </tbody>
 </table>
+<a asp-controller="Report" asp-action="PrintIt" asp-route-partidak="@partidak" asp-route-type="Hall Of Fame">PDF</a>
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@

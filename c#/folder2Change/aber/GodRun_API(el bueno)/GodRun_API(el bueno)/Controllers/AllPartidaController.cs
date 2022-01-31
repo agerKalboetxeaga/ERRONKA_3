@@ -25,6 +25,31 @@ namespace GodRun_API_el_bueno_.Controllers
             partidaViewModel.partidak = await _partidaService.GetPartidas();
             return View(partidaViewModel);
         }
+        public async Task<IActionResult> HallOfFame()
+        {
+            //var part = Partida.PartidakLortu(this.HttpContext);
+            var partidaViewModel = new PartidaViewModel();
+            partidaViewModel.partidak = await _partidaService.GetPartidas();
+           if(partidaViewModel.partidak.Count <= 10)
+
+            {
+               partidaViewModel.partidak.OrderByDescending(a => a.puntuazioa);
+            }
+        else
+            {
+                for(int index = 0; index < 10; index++)
+            {
+                    partidak.Add(partidaViewModel.partidak.OrderByDescending(a => a.puntuazioa).ElementAt(index))
+            partidaViewModel.partidak.
+            return View(partidaViewModel);
+        }
+        public async Task<IActionResult> HallOfShame()
+        {
+            //var part = Partida.PartidakLortu(this.HttpContext);
+            var partidaViewModel = new PartidaViewModel();
+            partidaViewModel.partidak = await _partidaService.GetPartidas();
+            return View(partidaViewModel);
+        }
 
 
         // GET: HomeController/Details/5

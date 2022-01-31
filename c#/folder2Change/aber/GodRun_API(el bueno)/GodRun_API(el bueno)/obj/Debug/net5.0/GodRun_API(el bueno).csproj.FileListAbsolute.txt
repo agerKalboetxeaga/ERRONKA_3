@@ -203,3 +203,5 @@ C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\GodRun_API(el bueno
 C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\RdlCompile.compiled
 C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\HallOfFail\Index.cshtml.g.cs
 C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\HallOfFame\Index.cshtml.g.cs
+C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\AllPartida\HallOfFame.cshtml.g.cs
+C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\AllPartida\HallOfShame.cshtml.g.cs

@@ -1,4 +1,5 @@
-﻿using GodRun_WebApi.Models;
+﻿using GodRun_API_el_bueno_.Models;
+using GodRun_WebApi.Models;
 using GodRun_WebApi.Services;
 using GodRun_WebApi.ViewModels;
 using Microsoft.AspNetCore.Http;

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GodRun_WebApi.Models
+namespace GodRun_API_el_bueno_.Models
 {
     public class Partida
     {
