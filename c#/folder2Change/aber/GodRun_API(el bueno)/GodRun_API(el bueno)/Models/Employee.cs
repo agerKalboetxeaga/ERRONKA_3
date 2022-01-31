@@ -12,7 +12,7 @@ namespace GodRun_WebApi.Models
 
         }
         
-        public Employee (string name, string jobTitle, int workPhone, string workEmail)
+        public Employee (string name, string jobTitle, string workPhone, string workEmail)
         {
             this.name = name;
             this.jobTitle = jobTitle;
@@ -23,7 +23,7 @@ namespace GodRun_WebApi.Models
        // public int id { get; set;} no se si puedo omitirlo
         public string name { get; set; }
         public string jobTitle { get; set; }
-        public int workPhone { get; set; }
+        public string workPhone { get; set; }
         public string workEmail { get; set; }
 
     }
