@@ -30,6 +30,7 @@
                     <td>@Html.DisplayFor(modelItem => item.date)</td>
                 </tr>
             }
+            @await Component.InvokeAsync("Comments")
         </tbody>
     </table>
 
