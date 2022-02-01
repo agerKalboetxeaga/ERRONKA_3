@@ -1,0 +1,71 @@
+﻿@model GodRun_API_el_bueno_.ViewModels.InkestaViewModel;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Would you recommend this experiece to anyone?
+            </th>
+            <th>
+                Wich part was the most difficult?
+            </th>
+            <th>
+                Was the boss challenging?
+            </th>
+            <th>
+                Would you like an ESport show?
+            </th>
+            <th>
+                Tell us your favourite item
+            </th>
+            <th>
+                User
+            </th>
+            <th>
+                Data
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.inkestak) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Galdera1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Galdera2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Galdera3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Galdera4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Galdera5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Erabiltzailea)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
