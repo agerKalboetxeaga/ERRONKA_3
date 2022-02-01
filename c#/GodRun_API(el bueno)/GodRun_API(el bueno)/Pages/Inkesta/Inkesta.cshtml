@@ -31,41 +31,48 @@ galdera 5 = Tell us your favourite item
 <div class="container">
 
 
-    <form  asp-action="Default" style="padding:5%">
-         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <form asp-action="Index" style="padding:5%">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="text-danger"></div>
         <div class="form-group">
             <label asp-for="Galdera1" for="inputAddress">Would you recommend this experiece to anyone? (Explain why shortly)</label>
             <input asp-for="Galdera1" type="text" class="form-control" id="inputAddress">
+            <span asp-validation-for="Galdera1" class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <label asp-for="Galdera2" for="inputAddress">Wich part was the most difficult?</label>
             <input asp-for="Galdera2" type="text" class="form-control" id="inputAddress">
+            <span asp-validation-for="Galdera2" class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <label asp-for="Galdera3" for="inputAddress">Was the boss challenging? (Explain why shortly)</label>
             <input asp-for="Galdera3" type="text" class="form-control" id="inputAddress">
+            <span asp-validation-for="Galdera3" class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <label asp-for="Galdera4" for="inputAddress">Would you like an ESport show?</label>
             <input asp-for="Galdera4" type="text" class="form-control" id="inputAddress">
+            <span asp-validation-for="Galdera4" class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <label asp-for="Galdera5" vfor="inputAddress">Tell us your favourite item</label>
             <input asp-for="Galdera5" type="text" class="form-control" id="inputAddress">
+            <span asp-validation-for="Galdera5" class="text-danger"></span>
         </div>
 
 
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
 
-        <button type="submit" class="btn btn-primary">Send</button>
+
     </form>
 
 </div>
-
-
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

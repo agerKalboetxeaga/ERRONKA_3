@@ -20,6 +20,7 @@ namespace GodRun_API_el_bueno_
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+
                     webBuilder.UseStartup<Startup>();
                 });
     }

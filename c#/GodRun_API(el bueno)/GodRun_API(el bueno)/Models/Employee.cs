@@ -7,6 +7,11 @@ namespace GodRun_WebApi.Models
 {
     public class Employee
     {
+        public Employee()
+        {
+
+        }
+        
         public Employee (string name, string jobTitle, string workPhone, string workEmail)
         {
             this.name = name;
@@ -14,6 +19,7 @@ namespace GodRun_WebApi.Models
             this.workPhone = workPhone;
             this.workEmail = workEmail;
         }
+        
        // public int id { get; set;} no se si puedo omitirlo
         public string name { get; set; }
         public string jobTitle { get; set; }

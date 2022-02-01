@@ -30,6 +30,8 @@
                     <td>@Html.DisplayFor(modelItem => item.date)</td>
                 </tr>
             }
+            <a asp-controller="Comments" asp-action="Index"></a>
+            @await Component.InvokeAsync("Comments")
         </tbody>
     </table>
 

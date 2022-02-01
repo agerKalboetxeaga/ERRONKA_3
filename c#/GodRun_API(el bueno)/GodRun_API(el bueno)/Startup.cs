@@ -1,4 +1,6 @@
 using GodRun_API_el_bueno_.Data;
+using GodRun_API_el_bueno_.Models;
+using GodRun_API_el_bueno_.Services;
 using GodRun_WebApi.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,17 +31,20 @@ namespace GodRun_API_el_bueno_
         public void ConfigureServices(IServiceCollection services)
         {
             //Zerbitzuak injektatzeko
+            services.AddScoped<IInkestaService, InkestaService>();
+            services.AddScoped<IComentsService, ComentsService>();
             services.AddScoped<IPartidaService, PartidaService>();
             //Sessions gehitzen
             services.AddDistributedMemoryCache();
             services.AddSession();
 
             //DB konexion injects.
-            /*
-            services.AddDbContext<CommentsDbContext>(options =>
-            options.UseSqlServer(
-                Configuration.GetConnectionString("CommentsConnection")));
-            */
+            services.AddDbContext<GodRunDbContext>(options =>
+             options.UseSqlServer(
+                 Configuration.GetConnectionString("GodRunConntection")));
+
+
+
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
