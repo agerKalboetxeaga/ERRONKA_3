@@ -8,11 +8,6 @@ namespace GodRun_WebApi.Models
 {
     public class Partida
     {
-        public Partida()
-        {
-
-        }
-       
         public Partida(int puntuazioa, int kills, string time, string date, Employee employee)
         {
             this.puntuazioa = puntuazioa;
@@ -21,7 +16,7 @@ namespace GodRun_WebApi.Models
             this.date = date;
             this.employee = employee;
         }
-       
+
         public int puntuazioa { get; set; }
         public int kills { get; set; }
         public string time { get; set; }

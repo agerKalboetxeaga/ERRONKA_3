@@ -9,11 +9,10 @@ namespace GodRun_WebApi.Models
     public class Comments
     {
         [Key]
-        public int comment_Id { get; set; }
+        public int commentId { get; set; }
         public string comment { get; set; }
-        public string jokalaria { get; set; }
         public string username { get; set; }
-        public System.DateTime date { get; set; }
+        public System.DateTime timestamp { get; set; }
 
     }
 }

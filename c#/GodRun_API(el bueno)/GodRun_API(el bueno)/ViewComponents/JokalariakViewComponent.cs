@@ -18,7 +18,7 @@ namespace GodRun_WebApi.ViewComponents
         }
         public async Task<IViewComponentResult> InvokeAsync(int id)
         {
-            return View(await _partidaService.GetPartidas());
+            return View(await _partidaService.GetMota(id));
         }
     }
 }

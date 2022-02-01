@@ -32,7 +32,7 @@ namespace GodRun_API_el_bueno_.Controllers
         */
 
         
-        public async Task<IActionResult> Index(int puntuazioa, int kills, string time, string date, string izena, string jobTitle, string workPhone, string workEmail)
+        public async Task<IActionResult> Index(int puntuazioa, int kills, string time, string date, string izena, string jobTitle, int workPhone, string workEmail)
         {
             //var part = Partida.PartidakLortu(this.HttpContext);
             Partida langilea = new Partida(puntuazioa, kills, time, date, new Employee(izena,jobTitle,workPhone,workEmail));

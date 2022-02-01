@@ -1,0 +1,44 @@
+﻿@model GodRun_WebApi.ViewModels.PartidaViewModel;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container ">
+    <h1>All Games</h1>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+
+                <th scope="col">Punctuation</th>
+                <th scope="col">Kills</th>
+                <th scope="col">Time</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+
+
+
+
+
+        <tbody>
+            @foreach (var item in Model.partidak)
+            {
+                <tr>
+                    <th scope="row">@Html.DisplayFor(modelItem => item.puntuazioa)</th>
+                    <td>@Html.DisplayFor(modelItem => item.kills)</td>
+                    <td>@Html.DisplayFor(modelItem => item.time)</td>
+                    <td>@Html.DisplayFor(modelItem => item.date)</td>
+                </tr>
+            }
+            <a asp-controller="Comments" asp-action="Index"></a>
+            @await Component.InvokeAsync("Comments")
+        </tbody>
+    </table>
+
+
+</div>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}

@@ -1,0 +1,81 @@
+﻿@page
+@model GodRun_API_el_bueno_.Models.Inkesta
+
+@{
+    ViewData["Title"] = "Inkesta";
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - God Runner</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/fontawesome/css/all.min.css" />
+
+</head>
+<!--
+
+galdera 1
+galdera 2
+galdera 3
+galdera 4
+galdera 5
+boton submit.
+
+galdera 1 = Would you recommend this experiece to anyone? (Explain why shortly)
+galdera 2 = Wich part was the most difficult?
+galdera 3 = Was the boss challenging? (Explain why shortly)
+galdera 4 = Would you like an ESport show?
+galdera 5 = Tell us your favourite item
+-->
+<div class="container">
+
+
+    <form asp-action="Index" style="padding:5%">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Galdera1" for="inputAddress">Would you recommend this experiece to anyone? (Explain why shortly)</label>
+            <input asp-for="Galdera1" type="text" class="form-control" id="inputAddress">
+            <span asp-validation-for="Galdera1" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Galdera2" for="inputAddress">Wich part was the most difficult?</label>
+            <input asp-for="Galdera2" type="text" class="form-control" id="inputAddress">
+            <span asp-validation-for="Galdera2" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Galdera3" for="inputAddress">Was the boss challenging? (Explain why shortly)</label>
+            <input asp-for="Galdera3" type="text" class="form-control" id="inputAddress">
+            <span asp-validation-for="Galdera3" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Galdera4" for="inputAddress">Would you like an ESport show?</label>
+            <input asp-for="Galdera4" type="text" class="form-control" id="inputAddress">
+            <span asp-validation-for="Galdera4" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Galdera5" vfor="inputAddress">Tell us your favourite item</label>
+            <input asp-for="Galdera5" type="text" class="form-control" id="inputAddress">
+            <span asp-validation-for="Galdera5" class="text-danger"></span>
+        </div>
+
+
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+
+
+    </form>
+
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
