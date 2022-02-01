@@ -34,8 +34,8 @@ public class ServerMain {
 		
 		try {
 			//running Server socket
-			serverSocket = new ServerSocket(6689);
-			System.out.println("[*] Server running on 6689");
+			serverSocket = new ServerSocket(6969);
+			System.out.println("[*] Server running on "+ serverSocket.getLocalPort());
 			
 			//starting our web service too
 			ClientManager.apiServiceStart(); 

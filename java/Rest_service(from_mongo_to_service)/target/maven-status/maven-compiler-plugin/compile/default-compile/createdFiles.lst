@@ -3,3 +3,4 @@ com\example\restservice\Controller.class
 com\example\restservice\Employee.class
 com\example\restservice\MongoDBConn.class
 com\example\restservice\Partida.class
+com\example\restservice\SwaggerConfig.class

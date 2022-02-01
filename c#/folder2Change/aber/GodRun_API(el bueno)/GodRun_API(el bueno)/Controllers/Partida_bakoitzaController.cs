@@ -1,6 +1,6 @@
-﻿using GodRun_WebApi.Models;
-using GodRun_WebApi.Services;
-using GodRun_WebApi.ViewModels;
+﻿using GodRun_API_el_bueno_.Models;
+using GodRun_API_el_bueno_.ViewModels;
+using GodRun_API_el_bueno_.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -32,7 +32,7 @@ namespace GodRun_API_el_bueno_.Controllers
         */
 
         
-        public async Task<IActionResult> Index(int puntuazioa, int kills, string time, string date, string izena, string jobTitle, int workPhone, string workEmail)
+        public async Task<IActionResult> Index(int puntuazioa, int kills, string time, string date, string izena, string jobTitle, string workPhone, string workEmail)
         {
             //var part = Partida.PartidakLortu(this.HttpContext);
             Partida langilea = new Partida(puntuazioa, kills, time, date, new Employee(izena,jobTitle,workPhone,workEmail));

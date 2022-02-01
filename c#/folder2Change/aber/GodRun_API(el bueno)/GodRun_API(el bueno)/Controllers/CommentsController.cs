@@ -39,7 +39,7 @@ namespace GodRun_API_el_bueno_.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Index([Bind("comment,Jokalaria,date")] Comments comments)
+        public async Task<IActionResult> Index([Bind("comment,Jokalaria")] Comments comments)
         {
             if (ModelState.IsValid)
             {

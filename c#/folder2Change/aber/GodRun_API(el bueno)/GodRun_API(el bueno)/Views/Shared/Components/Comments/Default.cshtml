@@ -1,4 +1,4 @@
-﻿@model GodRun_WebApi.Models.Comments
+﻿@model GodRun_API_el_bueno_.Models.Comments
 
 @{
     ViewData["Title"] = "Default";
@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Default">
+        <form asp-action="Index">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="comment" class="control-label"></label>
@@ -23,14 +23,10 @@
                 <span asp-validation-for="jokalaria" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="username" class="control-label"></label>
-                <input asp-for="username" class="form-control" />
-                <span asp-validation-for="username" class="text-danger"></span>
+                
             </div>
             <div class="form-group">
-                <label asp-for="date" class="control-label"></label>
-                <input asp-for="date" class="form-control" />
-                <span asp-validation-for="date" class="text-danger"></span>
+              
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

@@ -1,6 +1,7 @@
 package com.example.restservice;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
@@ -70,5 +71,22 @@ public class Controller {
         }
         return partidaIzenez;
     }
+    @GetMapping("/hof")
+    public List<Partida> hallOfFame(){
+    	 mongoConnection = new MongoDBConn();
+         partidak = mongoConnection.gethof();
+
+         return partidak;
+    	
+    }
+    @GetMapping("/hos")
+    public List<Partida> hallOfShame(){
+    	 mongoConnection = new MongoDBConn();
+         partidak = mongoConnection.gethos();
+
+         return partidak;
+    	
+    }
+    
     
 }

@@ -1,4 +1,4 @@
-﻿@model GodRun_WebApi.ViewModels.PartidaViewModel;
+﻿@model GodRun_API_el_bueno_.ViewModels.PartidaViewModel;
 @{
     ViewData["Title"] = "Index";
 }
@@ -27,7 +27,7 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.partidak) {
+@foreach (var item in Model.partidak.OrderByDescending(a => a.puntuazioa)) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.puntuazioa)
