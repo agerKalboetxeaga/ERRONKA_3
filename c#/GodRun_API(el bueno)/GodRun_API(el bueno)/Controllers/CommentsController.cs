@@ -46,7 +46,7 @@ namespace GodRun_API_el_bueno_.Controllers
             comment.jokalaria = Jokalaria;
            
                 /* Inkesta gorde*/
-                comment.username = HttpContext.User.Identity.Name;
+                comment.username = Jokalaria;
                 comment.date = DateTime.Now;
                 await _commentsService.KomentarioaGehitu(comment);
                 return View("/Views/Home/Index.cshtml");

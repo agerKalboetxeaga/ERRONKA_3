@@ -10,5 +10,6 @@ namespace GodRun_API_el_bueno_.Services
     {
         Task InkestaGehitu(Inkesta inkesta);
 
+
     }
 }

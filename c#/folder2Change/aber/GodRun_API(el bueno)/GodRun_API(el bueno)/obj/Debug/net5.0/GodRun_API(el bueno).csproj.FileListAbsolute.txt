@@ -204,3 +204,59 @@ C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\GodRun_API(el bueno
 C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\AllPartida\HallOfShame.cshtml.g.cs
 C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).csproj.AssemblyReference.cache
 C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\GodRun_API(el bueno)\bin\Debug\net5.0\wwwroot\Reports\Report2.rdlc
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).csproj.AssemblyReference.cache
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\RdlCompile.cache
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\RdlCompile.compiled
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).AssemblyInfoInputs.cache
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).AssemblyInfo.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).csproj.CoreCompileInputs.cache
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).MvcApplicationPartsAssemblyInfo.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).MvcApplicationPartsAssemblyInfo.cache
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).RazorAssemblyInfo.cache
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).RazorAssemblyInfo.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\staticwebassets\GodRun_API(el bueno).StaticWebAssets.Manifest.cache
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\staticwebassets\GodRun_API(el bueno).StaticWebAssets.xml
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\scopedcss\bundle\GodRun_API(el bueno).styles.css
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).TagHelpers.input.cache
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).TagHelpers.output.cache
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).RazorCoreGenerate.cache
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Email.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Pages\Inkesta\Index.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Pages\Lore\lore.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\AllPartida\HallOfFame.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\AllPartida\HallOfShame.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\AllPartida\Index.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Comments\Index.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Inkesta.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Inkesta\Index.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Partida\Index.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Partida_bakoitza\Index.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Shared\Components\Comments\Default.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Shared\Components\Jokalariak\Default.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Shared\Components\Partidak\Default.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Shared\Components\Wgames\Default.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).RazorTargetAssemblyInfo.cache
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).RazorTargetAssemblyInfo.cs
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).dll
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\ref\GodRun_API(el bueno).dll
+C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\folder2Change\aber\GodRun_API(el bueno)\GodRun_API(el bueno)\obj\Debug\net5.0\GodRun_API(el bueno).pdb
