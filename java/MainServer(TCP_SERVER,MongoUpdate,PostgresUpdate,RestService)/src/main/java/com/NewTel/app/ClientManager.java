@@ -359,7 +359,7 @@ public class ClientManager extends Thread{
 			/*
 			 * Esto convierte directamente los objetos json en objetos java
 			 */
-			DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+			DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 			Date date = new Date();
 			try {
 				date = dateFormat.parse((String) fitxategia.get("date"));
