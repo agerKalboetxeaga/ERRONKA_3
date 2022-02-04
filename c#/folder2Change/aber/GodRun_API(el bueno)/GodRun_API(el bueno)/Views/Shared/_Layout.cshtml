@@ -47,52 +47,72 @@
                             <a class="nav-link" href="~/">Home </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" asp-controller="AllPartida" asp-action="Index">Partidak</a>
+                            <a class="nav-link" asp-controller="AllPartida" asp-action="Index">Games</a>
                             <!--Metodo para enseñar las partidas-->
                             <a class="dropdown-item" asp-controller="Partida" asp-action="Index"></a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
+
+
+
+                        <li class="btn-group dropdown">
+                            <a class="nav-link ">
                                 Top Gamers
                             </a>
+                            <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdown" style="color:white">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
+
 
                                 @await Component.InvokeAsync("Partidak", new { id = 1 })
 
                             </div>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" asp-controller="AllPartida" asp-action="HallOfFame" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="btn-group dropdown">
+                            <a class="nav-link " asp-controller="AllPartida" asp-action="HallOfFame">
                                 Top Games
                             </a>
+                            <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdown" style="color:white">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
+
 
                                 @await Component.InvokeAsync("Jokalariak", new { id = 1 })
 
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" asp-controller="AllPartida" asp-action="HallOfShame" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
+                        <li class="btn-group dropdown">
+                            <a class="nav-link " asp-controller="AllPartida" asp-action="HallOfShame">
                                 Worst Games
                             </a>
+                            <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdown" style="color:white">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
+
 
                                 @await Component.InvokeAsync("Wgames", new { id = 1 })
 
                             </div>
                         </li>
+
+
+
+
+
                         <li class="nav-item ">
-                            <a class="nav-link" href="Lore/lore">Lore</a>
+                            <a class="nav-link" href="~/Lore/lore">Lore</a>
 
                         </li>
 
                         <partial name="_LoginPartial" />
-
 
                     </ul>
 
@@ -110,7 +130,10 @@
             </ul>
         </div>
         <main role="main" class="">
-            @RenderBody()
+          
+
+                @RenderBody()
+              
         </main>
     </div>
 

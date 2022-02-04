@@ -17,7 +17,8 @@ namespace GodRun_API_el_bueno_.Services
         }
         public async Task KomentarioaGehitu(Comments comment)
         {
-            _context.Add(comment);
+            _context.Comments.Add(comment);
+            _context.SaveChanges();
         }
 
         public async Task<List<Comments>> KomentarioakIkusi() //awaits quitaus y el Ienumerable quitau taen

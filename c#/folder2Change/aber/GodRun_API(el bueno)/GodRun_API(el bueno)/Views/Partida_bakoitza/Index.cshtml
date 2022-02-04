@@ -3,52 +3,36 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                <p>puntuazioa</p>
-            </th>
-            <th>
-                <p>kills</p>
-            </th>
-            <th>
-                <p>time</p>
-            </th>
-            <th>
-                <p>date</p>
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.partidak)
-        {
+<div class="container ">
+    <h1>Games</h1>
+    <table class="table">
+        <thead class="thead-dark">
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.puntuazioa)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.kills)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.time)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.date)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>
+
+                <th scope="col">Punctuation</th>
+                <th scope="col">Kills</th>
+                <th scope="col">Time</th>
+                <th scope="col">Date</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+
+
+
+
+
+        <tbody>
+            @foreach (var item in Model.partidak)
+            {
+                <tr>
+                    <th scope="row">@Html.DisplayFor(modelItem => item.puntuazioa)</th>
+                    <td>@Html.DisplayFor(modelItem => item.kills)</td>
+                    <td>@Html.DisplayFor(modelItem => item.time)</td>
+                    <td>@Html.DisplayFor(modelItem => item.date)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+</div>
 
