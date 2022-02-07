@@ -1,5 +1,4 @@
-﻿
-@model GodRun_API_el_bueno_.Models.Inkesta
+﻿@model GodRun_API_el_bueno_.Models.Inkesta;
 
 @{
     ViewData["Title"] = "Inkesta";
@@ -7,7 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - God Runner</title>
+ 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/lib/fontawesome/css/all.min.css" />
@@ -31,7 +30,7 @@ galdera 5 = Tell us your favourite item
 <div class="container">
 
 
-    <form style="padding:5%" method="post" asp-controller="Inkesta" asp-action="">
+    <form style="padding:5%" method="post" asp-controller="Inkesta" asp-action="ShowInkesta">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="text-danger"></div>
         <div class="form-group">

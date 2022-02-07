@@ -49,7 +49,7 @@ namespace GodRun_API_el_bueno_.Controllers
             comment.username = HttpContext.User.Identity.Name;
             comment.date = DateTime.Now;
             await _commentsService.KomentarioaGehitu(comment);
-            return View("/Views/Home/Index.cshtml");
+            return RedirectToAction("Index");
 
 
         }

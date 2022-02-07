@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\folder2Change\\aber\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj": {}
+    "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj": {}
   },
   "projects": {
-    "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\folder2Change\\aber\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj": {
+    "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\folder2Change\\aber\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
+        "projectUniqueName": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
         "projectName": "GodRun_API(el bueno)",
-        "projectPath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\folder2Change\\aber\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
+        "projectPath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
         "packagesPath": "C:\\Users\\perez.kepa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\folder2Change\\aber\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\obj\\",
+        "outputPath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

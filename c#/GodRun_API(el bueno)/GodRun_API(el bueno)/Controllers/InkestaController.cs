@@ -23,7 +23,7 @@ namespace GodRun_API_el_bueno_.Controllers
             this._context = context;
             this._inkestaService = inkestaService;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult>Index()
         {
             InkestaViewModel inkestaView = new InkestaViewModel();
             inkestaView.inkestak = await _inkestaService.InkestaIkusi();
@@ -35,10 +35,11 @@ namespace GodRun_API_el_bueno_.Controllers
             inkestaView.inkestak = await _inkestaService.InkestaIkusiUser(HttpContext.User.Identity.Name);
             return View(inkestaView);
         }
+   
 
         [HttpPost]
             [ValidateAntiForgeryToken]
-            public async Task<IActionResult> Index([Bind("Galdera1,Galdera2,Galdera3,Galdera4,Galdera5")] Inkesta inkesta)
+            public async Task<IActionResult> ShowInkesta([Bind("Galdera1,Galdera2,Galdera3,Galdera4,Galdera5")] Inkesta inkesta)
         {
             if (ModelState.IsValid)
             {
@@ -46,7 +47,7 @@ namespace GodRun_API_el_bueno_.Controllers
                 inkesta.Erabiltzailea = HttpContext.User.Identity.Name;
                 inkesta.Data = DateTime.Now;
                 await _inkestaService.InkestaGehitu(inkesta);
-                return RedirectToPage("Index");
+                return View("/Views/Home/Index.cshtml");
             }
             return View();
         }
