@@ -23,11 +23,9 @@ namespace GodRun_API_el_bueno_.Controllers
             this._context = context;
             this._inkestaService = inkestaService;
         }
-        public async Task<IActionResult>Index()
+        public IActionResult Index()
         {
-            InkestaViewModel inkestaView = new InkestaViewModel();
-            inkestaView.inkestak = await _inkestaService.InkestaIkusi();
-            return View(inkestaView);
+            return View();
         }
         public async Task<IActionResult> ikusiUser()
         {
