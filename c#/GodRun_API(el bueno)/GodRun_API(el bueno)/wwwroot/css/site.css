@@ -149,7 +149,7 @@ body {
 
 
 .navbar-light .navbar-nav .nav-link {
-    color: white !important;
+    color: white;
 }
 .cover-container {
     max-width: 42em;

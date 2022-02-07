@@ -1,0 +1,74 @@
+﻿@model GodRun_API_el_bueno_.ViewModels.PartidaViewModel;
+@{
+    ViewData["Title"] = "HallOfFame";
+}
+<div class="container">
+
+    <h1>Hall Of Fame</h1>
+    <script>
+
+
+    </script>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <p>n#</p>
+                </th>
+                <th>
+                    <p>puntuazioa</p>
+                </th>
+                <th>
+                    <p>kills</p>
+                </th>
+                <th>
+                    <p>time</p>
+                </th>
+                <th>
+                    <p>date</p>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var item in Model.partidak)
+            {
+
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.puntuazioa)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.kills)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.time)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.employee.name)
+                    </td>
+
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+
+
+
+    <a asp-controller="Report" asp-action="PrintHoF">DESCARGAR PDF</a>
+    @*
+        For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+    *@
+    @{
+    }
+</div>
