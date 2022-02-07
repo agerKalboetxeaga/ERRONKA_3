@@ -86,7 +86,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](images/juegoscreen.jpg)
 
-Gure proiektuak oso konpletua da eta erabil erraza:
+Gure proiektuak oso konpletua da eta erabil erraza: [[Java classDiagram]](https://github.com/agerKalboetxeaga/ERRONKA_3/blob/main/java/GodRun_Java_Diagram.svg)
 
 Horregatik:
 * Joko ona (aleatorioki sortzen da partida bakoitza Rogue-like jokoen antzera pixel art itxurarekin)
