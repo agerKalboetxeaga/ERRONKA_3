@@ -1,5 +1,6 @@
 ﻿using GodRun_API_el_bueno_.Models;
 using GodRun_API_el_bueno_.Services;
+using GodRun_API_el_bueno_.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -22,10 +23,19 @@ namespace GodRun_API_el_bueno_.Controllers
             this._context = context;
             this._inkestaService = inkestaService;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            InkestaViewModel inkestaView = new InkestaViewModel();
+            inkestaView.inkestak = await _inkestaService.InkestaIkusi();
+            return View(inkestaView);
         }
+        public async Task<IActionResult> ikusiUser()
+        {
+            InkestaViewModel inkestaView = new InkestaViewModel();
+            inkestaView.inkestak = await _inkestaService.InkestaIkusiUser(HttpContext.User.Identity.Name);
+            return View(inkestaView);
+        }
+
         [HttpPost]
             [ValidateAntiForgeryToken]
             public async Task<IActionResult> Index([Bind("Galdera1,Galdera2,Galdera3,Galdera4,Galdera5")] Inkesta inkesta)

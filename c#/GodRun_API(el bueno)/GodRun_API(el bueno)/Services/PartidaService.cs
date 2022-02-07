@@ -1,4 +1,5 @@
-﻿using GodRun_WebApi.Models;
+﻿using GodRun_API_el_bueno_.Models;
+
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -6,11 +7,43 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace GodRun_WebApi.Services
+namespace GodRun_API_el_bueno_.Services
 {
     public class PartidaService : IPartidaService
     {
         private Uri url = new Uri("http://192.168.65.6:8080/");
+
+        public async Task<IList<Partida>> GetHoF()
+        {
+            List<Partida> partida_List = new List<Partida>();
+            Uri rutaHoF = new Uri(url, "hof");
+
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync(rutaHoF))//ensi rutapartida_ind
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    partida_List = JsonConvert.DeserializeObject<List<Partida>>(apiResponse);
+                }
+            }
+            return partida_List;
+        }
+
+        public async Task<IList<Partida>> GetHoS()
+        {
+            List<Partida> partida_List = new List<Partida>();
+            Uri rutaHoS = new Uri(url, "hos");
+
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync(rutaHoS))//ensi rutapartida_ind
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    partida_List = JsonConvert.DeserializeObject<List<Partida>>(apiResponse);
+                }
+            }
+            return partida_List;
+        }
 
         public async Task<IList<Partida>> GetIzena(string izena)
         {

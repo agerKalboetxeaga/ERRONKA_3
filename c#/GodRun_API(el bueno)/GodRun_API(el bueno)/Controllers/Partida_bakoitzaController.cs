@@ -1,6 +1,6 @@
-﻿using GodRun_WebApi.Models;
-using GodRun_WebApi.Services;
-using GodRun_WebApi.ViewModels;
+﻿using GodRun_API_el_bueno_.Models;
+using GodRun_API_el_bueno_.ViewModels;
+using GodRun_API_el_bueno_.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -21,12 +21,12 @@ namespace GodRun_API_el_bueno_.Controllers
         // GET: HomeController
         
         /*
-         public async Task<IActionResult> Index(Partida langilea)
+         public async Task<IActionResult> Index(Partida partida)
          {
              //var part = Partida.PartidakLortu(this.HttpContext);
              var partidaViewModel = new PartidaViewModel();
              partidaViewModel.partidak = new List<Partida>();
-             partidaViewModel.partidak.Add(langilea);
+             partidaViewModel.partidak.Add(partida);
              return View(partidaViewModel);
          }
         */
@@ -44,6 +44,7 @@ namespace GodRun_API_el_bueno_.Controllers
            
             return View(partidaViewModel);
         }
+        
         
         // GET: HomeController/Details/5
         /*
