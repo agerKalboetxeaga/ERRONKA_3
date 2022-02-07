@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4R5FOYC5PG7AD1TEHhI1tudbdEXt7OlvDpJbWtrWPzoZT3zhH4uupSotafXcJvjHKM/YSJlvQI8t71il2b8n3A==",
+  "dgSpecHash": "0J0HzPykNwajGWLC1r21YUUj9mAx1jbnrcJUjIsZn+d5MqiWKTtz5yge0UWKZXecFVUBJLpkP8aQzvLOJJAV1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
+  "projectFilePath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\ERRONKA_3\\c#\\folder2Change\\aber\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
   "expectedPackageFiles": [
     "C:\\Users\\perez.kepa\\.nuget\\packages\\aspnetcore.reporting\\2.1.0\\aspnetcore.reporting.2.1.0.nupkg.sha512",
     "C:\\Users\\perez.kepa\\.nuget\\packages\\aspnetcore.reportingservices\\2.1.0\\aspnetcore.reportingservices.2.1.0.nupkg.sha512",
