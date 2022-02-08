@@ -145,14 +145,32 @@ body {
     max-width:100% !important;
     max-height:100% !important;
     padding:0 !important;
+    height: auto !important;
 }
 
 
 .navbar-light .navbar-nav .nav-link {
-    color: white !important;
+    color: white;
 }
 .cover-container {
     max-width: 42em;
     padding: 5em !important;
     color:white;
+}
+
+
+
+#linkdercarga:link, #linkdercarga:visited {
+    border-radius: 10px ;
+    color: black;
+    border: 2px solid #003566;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#linkdercarga:hover, #linkdercarga:active {
+    background-color: #003566;
+    color: white;
 }

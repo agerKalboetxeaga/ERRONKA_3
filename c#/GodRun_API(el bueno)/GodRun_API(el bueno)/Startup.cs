@@ -1,7 +1,6 @@
 using GodRun_API_el_bueno_.Data;
 using GodRun_API_el_bueno_.Models;
 using GodRun_API_el_bueno_.Services;
-using GodRun_WebApi.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,20 +30,22 @@ namespace GodRun_API_el_bueno_
         public void ConfigureServices(IServiceCollection services)
         {
             //Zerbitzuak injektatzeko
-            services.AddScoped<IInkestaService, InkestaService>();
-            services.AddScoped<IComentsService, ComentsService>();
+            //partida
             services.AddScoped<IPartidaService, PartidaService>();
+            //comments
+            services.AddScoped<IComentsService, ComentsService>();
+            //Inkesta
+            services.AddScoped<IInkestaService, InkestaService>();
             //Sessions gehitzen
             services.AddDistributedMemoryCache();
             services.AddSession();
 
             //DB konexion injects.
+            
             services.AddDbContext<GodRunDbContext>(options =>
-             options.UseSqlServer(
-                 Configuration.GetConnectionString("GodRunConntection")));
-
-
-
+            options.UseSqlServer(
+                Configuration.GetConnectionString("GodRunConntection")));
+            
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
@@ -54,11 +55,25 @@ namespace GodRun_API_el_bueno_
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
+
+            services.AddAuthentication().AddGoogle(options =>
+            {
+            IConfigurationSection googleAuthSection = Configuration.GetSection("Authentication:Google");
+            options.ClientId = googleAuthSection["ClientId"];
+                options.ClientSecret = googleAuthSection["ClientSecret"];
+           
+            });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            
+           
+
+            
             //session gehitzen...
             //Lehenengo lerroan...
             app.UseSession();

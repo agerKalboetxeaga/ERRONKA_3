@@ -1,4 +1,4 @@
-﻿@model IEnumerable<GodRun_WebApi.Models.Partida>
+﻿@model IEnumerable<GodRun_API_el_bueno_.Models.Partida>
 
 @{
     ViewData["Title"] = "Jokalariak";
@@ -10,10 +10,11 @@
 {
     @if (item.puntuazioa > 50000)
     {
-        <a class="dropdown-item">@Html.DisplayFor(modelItem => item.employee.name) ->  @Html.DisplayFor(modelItem => item.puntuazioa)</a>
+<a class="dropdown-item">
+    @Html.DisplayFor(modelItem => item.employee.name)-@Html.DisplayFor(modelItem => item.puntuazioa)@Html.ActionLink("ikusi", "Index", "Partida_bakoitza", new { puntuazioa = item.puntuazioa, kills = item.kills, time = item.time, date = item.date, izena = item.employee.name, jobTitle = item.employee.jobTitle, workPhone = item.employee.workPhone, workEmail = item.employee.workEmail })
+</a>
 
 
-        @Html.ActionLink("ikusi", "Index", "Partida_bakoitza", new { puntuazioa = item.puntuazioa, kills = item.kills, time = item.time, date = item.date, izena = item.employee.name, jobTitle = item.employee.jobTitle, workPhone = item.employee.workPhone, workEmail = item.employee.workEmail })
     }
 }
 
