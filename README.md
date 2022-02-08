@@ -86,7 +86,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](images/juegoscreen.jpg)
 
-Gure proiektuak oso konpletua da eta erabil erraza:
+Gure proiektuak oso konpletua da eta erabil erraza: [[Java classDiagram]](https://github.com/agerKalboetxeaga/ERRONKA_3/blob/main/java/GodRun_Java_Diagram.svg)
 
 Horregatik:
 * Joko ona (aleatorioki sortzen da partida bakoitza Rogue-like jokoen antzera pixel art itxurarekin)
@@ -255,15 +255,15 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/agerKalboetxeaga/ERRONKA3?style=for-the-badge
 [contributors-url]: https://github.com/agerKalboetxeaga/ERRONKA_3/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/agerKalboetxeaga?style=for-the-badge
 [forks-url]:https://github.com/agerKalboetxeaga/ERRONKA_3/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/agerKalboetxeaga?style=for-the-badge
 [stars-url]:https://github.com/agerKalboetxeaga/ERRONKA_3/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/agerKalboetxeaga?style=for-the-badge
 [issues-url]:https://github.com/agerKalboetxeaga/ERRONKA_3/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/agerKalboetxeaga?style=for-the-badge
 [license-url]: https://github.com/agerKalboetxeaga/ERRONKA_3/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]:https://github.com/agerKalboetxeaga/ERRONKA_3

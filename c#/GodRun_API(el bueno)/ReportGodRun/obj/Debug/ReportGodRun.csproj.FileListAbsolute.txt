@@ -37,6 +37,7 @@ C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\GodRun_API(el bueno)\
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.csproj.CoreCompileInputs.cache
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.exe
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.pdb
+<<<<<<< HEAD
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\version\GodRun_API(el bueno)\ReportGodRun\bin\Debug\Report2.rdlc
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\version\GodRun_API(el bueno)\ReportGodRun\bin\Debug\Report1.rdlc
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\version\GodRun_API(el bueno)\ReportGodRun\bin\Debug\ReportGodRun.exe.config
@@ -50,3 +51,5 @@ C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\version\GodRun_API(el bueno)\Repor
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\version\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.csproj.CoreCompileInputs.cache
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\version\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.exe
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\version\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.pdb
+=======
+>>>>>>> f2b5ded65218a78983fd7059a343c4a684069ace

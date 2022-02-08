@@ -31,15 +31,14 @@ namespace GodRun_API_el_bueno_.Controllers
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
-            List<Employee> employees = new List<Employee>();
+            List<ReportModel> modelReport = new List<ReportModel>();
             IList<Partida> partidak = new List<Partida>();
              partidak = await _partidaService.GetHoF();
-            
-
-
-            foreach (var partida in partidak)
+            int index = 1;
+            foreach (Partida partida in partidak)
             {
-                employees.Add(partida.employee);
+                modelReport.Add(new ReportModel(index,partida.puntuazioa, partida.kills, partida.time, partida.date, partida.employee.name));
+                index++;
             }
 
             string mimtype = "";
@@ -48,11 +47,8 @@ namespace GodRun_API_el_bueno_.Controllers
 
             Dictionary<string, string> parameters = new Dictionary<string, string>();
             parameters.Add("Param1", HttpContext.User.Identity.Name + "entzat opari hau");
-
-
             LocalReport localReport = new LocalReport(PATH);
-            localReport.AddDataSource("PartidaDataSet", partidak);
-            localReport.AddDataSource("EmployeeDataSet", employees);
+            localReport.AddDataSource("ReportModel", modelReport);
 
             var result = localReport.Execute(RenderType.Pdf, extension, parameters, mimtype);
 
@@ -67,15 +63,14 @@ namespace GodRun_API_el_bueno_.Controllers
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
-            List<Employee> employees = new List<Employee>();
+            List<ReportModel> modelReport = new List<ReportModel>();
             IList<Partida> partidak = new List<Partida>();
             partidak = await _partidaService.GetHoS();
-
-
-
-            foreach (var partida in partidak)
+            int index = 1;
+            foreach (Partida partida in partidak)
             {
-                employees.Add(partida.employee);
+                modelReport.Add(new ReportModel(index, partida.puntuazioa, partida.kills, partida.time, partida.date, partida.employee.name));
+                index++;
             }
 
             string mimtype = "";
@@ -87,8 +82,7 @@ namespace GodRun_API_el_bueno_.Controllers
 
 
             LocalReport localReport = new LocalReport(PATH);
-            localReport.AddDataSource("PartidaDataSet", partidak);
-            localReport.AddDataSource("EmployeeDataSet", employees);
+            localReport.AddDataSource("DataSet1", modelReport);
 
             var result = localReport.Execute(RenderType.Pdf, extension, parameters, mimtype);
 

@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "hBemacMKFup2xKe06QsVurcL6S1EegQ8xB7krgCEpKs91WqWQ9ZbbI1BsdFCDPfFKEUGwQD8pVpnT+OJbGk48w==",
+=======
+  "dgSpecHash": "4R5FOYC5PG7AD1TEHhI1tudbdEXt7OlvDpJbWtrWPzoZT3zhH4uupSotafXcJvjHKM/YSJlvQI8t71il2b8n3A==",
+>>>>>>> f2b5ded65218a78983fd7059a343c4a684069ace
   "success": true,
   "projectFilePath": "C:\\Users\\perez.kepa\\KEPA\\2EBAL\\ERRONKA\\Git hb\\version\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
   "expectedPackageFiles": [

@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "HallOfFame";
 }
+<<<<<<< HEAD
 
 <head>
     <meta charset="utf-8" />
@@ -12,6 +13,8 @@
     <link rel="stylesheet" href="~/lib/fontawesome/css/all.min.css" />
 
 </head>
+=======
+>>>>>>> f2b5ded65218a78983fd7059a343c4a684069ace
 <div class="container">
 
     <h1>Hall Of Fame</h1>
@@ -21,6 +24,7 @@
     </script>
 
     <table class="table">
+<<<<<<< HEAD
         <thead class="thead-dark">
             <tr>
 
@@ -61,6 +65,54 @@
                 </td>
                 @{cnt++;}
             </tr>
+=======
+        <thead>
+            <tr>
+                <th>
+                    <p>n#</p>
+                </th>
+                <th>
+                    <p>puntuazioa</p>
+                </th>
+                <th>
+                    <p>kills</p>
+                </th>
+                <th>
+                    <p>time</p>
+                </th>
+                <th>
+                    <p>date</p>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var item in Model.partidak)
+            {
+
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.puntuazioa)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.kills)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.time)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.employee.name)
+                    </td>
+
+                </tr>
+>>>>>>> f2b5ded65218a78983fd7059a343c4a684069ace
             }
 
 
@@ -69,14 +121,21 @@
 
 
 
+<<<<<<< HEAD
     <a id="linkdercarga" asp-controller="Report" asp-action="PrintHoF">DESCARGAR PDF</a>
+=======
+    <a asp-controller="Report" asp-action="PrintHoF">DESCARGAR PDF</a>
+>>>>>>> f2b5ded65218a78983fd7059a343c4a684069ace
     @*
         For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
     *@
     @{
     }
 </div>
+<<<<<<< HEAD
 
 
 
 ¡
+=======
+>>>>>>> f2b5ded65218a78983fd7059a343c4a684069ace

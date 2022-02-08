@@ -10,3 +10,4 @@ C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\ReportGodRun\obj\De
 C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.csproj.CoreCompileInputs.cache
 C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.exe
 C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.pdb
+C:\Users\kalboetxeaga.ager\source\repos\GodRun_API(el bueno)\ReportGodRun\bin\Debug\Report2.rdlc
