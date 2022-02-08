@@ -15,7 +15,7 @@ namespace GodRun_API_el_bueno_.Controllers
     [Authorize]
     public class CommentsController : Controller
     {
-
+       
         private readonly GodRunDbContext _context;
         private readonly IComentsService _commentsService;
 
@@ -30,28 +30,26 @@ namespace GodRun_API_el_bueno_.Controllers
             commentsView.comments = await _commentsService.KomentarioakIkusi();
             return View(commentsView);
         }
-        public async Task<IActionResult> ikusiJokalaria(string jokalaria)
+        public async Task<IActionResult> ikusiJokalaria(string jokalaria) 
         {
             CommentsViewModel commentsView = new CommentsViewModel();
             commentsView.comments = await _commentsService.KomentarioakIkusiLangilea(jokalaria);
-
+            
             return View(commentsView);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Index(string Comment, string Jokalaria)
+        public async Task<IActionResult> Index([Bind("comment,Jokalaria")] Comments comments)
         {
-            Comments comment = new Comments();
-            comment.comment = Comment;
-            comment.jokalaria = Jokalaria;
-
-            /* Inkesta gorde*/
-            comment.username = HttpContext.User.Identity.Name;
-            comment.date = DateTime.Now;
-            await _commentsService.KomentarioaGehitu(comment);
-            return View("/Views/Home/Index.cshtml");
-
-
+            if (ModelState.IsValid)
+            {
+                /* Inkesta gorde*/
+                comments.username = HttpContext.User.Identity.Name;
+                comments.date = DateTime.Now;
+                await _commentsService.KomentarioaGehitu(comments);
+                return RedirectToPage("Index");
+            }
+            return View();
         }
 
     }

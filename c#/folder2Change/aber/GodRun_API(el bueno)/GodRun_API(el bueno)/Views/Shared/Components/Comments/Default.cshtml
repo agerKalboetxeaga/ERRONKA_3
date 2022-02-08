@@ -1,35 +1,38 @@
-﻿@model GodRun_API_el_bueno_.ViewModels.PartidaViewModel;
+﻿@model GodRun_API_el_bueno_.Models.Comments
 
 @{
     ViewData["Title"] = "Default";
 }
 
+<h1>Default</h1>
 
-
-<h4>Comment</h4>
+<h4>Comments</h4>
 <hr />
-<div class="row" style="margin:0 !important">
-
-    <form method="post" asp-controller="Comments" asp-action="Index" style="width:100%">
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-
-            <textarea class="form-control" name="Comment" id="Comment" rows="3"></textarea>
-        </div>
-        <div class="form-group">
-
-            <input class="form-control" name="Jokalaria" id="player" value="@Model.partidak.First().employee.name" style="visibility: hidden"/>
-        </div>
-
-        <div class="form-group">
-
-            <input class="btn-dark" type="submit" value="Submit" />
-        </div>
-    </form>
-
-
- 
-
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="comment" class="control-label"></label>
+                <input asp-for="comment" class="form-control" />
+                <span asp-validation-for="comment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="jokalaria" class="control-label"></label>
+                <input asp-for="jokalaria" class="form-control" />
+                <span asp-validation-for="jokalaria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+            </div>
+            <div class="form-group">
+              
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
 </div>
 
 
