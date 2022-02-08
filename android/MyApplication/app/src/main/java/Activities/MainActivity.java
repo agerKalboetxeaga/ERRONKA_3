@@ -11,6 +11,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import com.example.myapplication.R;
+
+import Miscellaneous.Music;
 import Miscellaneous.RunDate;
 
 import java.util.List;
@@ -20,6 +22,7 @@ import Connection.User;
 
 public class MainActivity extends Activity {
     public static SQLiteDatabase db;
+    private Music music;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +38,8 @@ public class MainActivity extends Activity {
         dbPostgres.execute(this.getApplicationContext());
         RunDate.getDate();
 
-
+        music = new Music(this);
+        music.startLoop();
         Button button = (Button) findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {

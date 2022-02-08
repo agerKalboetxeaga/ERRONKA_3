@@ -2,21 +2,26 @@ package Activities;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.example.myapplication.R;
+
 import Miscellaneous.GameView;
 
 import Connection.JSONcreator;
 import Connection.TCPClient;
+import Miscellaneous.Music;
 import Sprites.Paper;
 
 public class GameActivity extends Activity {
         public static int width,height;
         public static double ratio = 0.00231481481;
         private GameView gameView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
