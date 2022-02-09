@@ -21,7 +21,7 @@ public class GameActivity extends Activity {
         public static int width,height;
         public static double ratio = 0.00231481481;
         private GameView gameView;
-
+        private Music music;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,8 @@ public class GameActivity extends Activity {
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         height = displayMetrics.heightPixels;
         width = displayMetrics.widthPixels;
-
+        music = new Music(this);
+        music.startLoop();
         gameView =new GameView(this);
         setContentView(gameView);
     }
@@ -54,6 +55,7 @@ public class GameActivity extends Activity {
             new TCPClient().execute(JSONcreator.jsonfile);
             Paper.paper=0;
         }
+        music.stopLoop();
         gameView.pause();
         gameView.timerpause();
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
@@ -67,6 +69,7 @@ public class GameActivity extends Activity {
             new TCPClient().execute(JSONcreator.jsonfile);
             Paper.paper=0;
         }
+        music.stopLoop();
         gameView.pause();
         gameView.timerpause();
         startActivity(new Intent(getApplicationContext(), MainActivity.class));

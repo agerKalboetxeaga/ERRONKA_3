@@ -22,7 +22,7 @@ import Connection.User;
 
 public class MainActivity extends Activity {
     public static SQLiteDatabase db;
-    private Music music;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,16 +30,13 @@ public class MainActivity extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-
         db = openOrCreateDatabase("Users", Context.MODE_PRIVATE, null);
-        //db.execSQL("DROP TABLE IF EXISTS Users");
         db.execSQL("CREATE TABLE IF NOT EXISTS Users(id int, name VARCHAR, jobTitle VARCHAR, workPhone VARCHAR, workEmail VARCHAR);");
         DbPostgres dbPostgres = new DbPostgres();
         dbPostgres.execute(this.getApplicationContext());
         RunDate.getDate();
 
-        music = new Music(this);
-        music.startLoop();
+
         Button button = (Button) findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {

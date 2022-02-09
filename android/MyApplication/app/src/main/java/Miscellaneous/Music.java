@@ -23,12 +23,14 @@ public class Music extends Thread{
 
     public void startLoop(){
         isRunning(true);
+
         start();
     }
 
     public void stopLoop(){
         isRunning(false);
         try {
+            music.stop();
             join();
         } catch (InterruptedException e) {
             e.printStackTrace();
