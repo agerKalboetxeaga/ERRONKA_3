@@ -7,10 +7,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using GodRun_API_el_bueno_.ViewModels;
 
 namespace GodRun_API_el_bueno_.Controllers
 {
+    /// <summary>
+    /// Controller for Partidas
+    /// </summary>
     public class AllPartidaController : Controller
     {
         private readonly IPartidaService _partidaService;
@@ -20,6 +22,10 @@ namespace GodRun_API_el_bueno_.Controllers
         }
 
         // GET: HomeController
+        /// <summary>
+        /// This method will return a view containing a List of all partidak
+        /// </summary>
+        /// <returns>returns a view containing a List of all partidak</returns>
         public async Task<IActionResult> Index()
         {
             //var part = Partida.PartidakLortu(this.HttpContext);
@@ -27,6 +33,10 @@ namespace GodRun_API_el_bueno_.Controllers
             partidaViewModel.partidak = await _partidaService.GetPartidas();
             return View(partidaViewModel);
         }
+        /// <summary>
+        /// This method will return a view with a list containing a The 10 best games
+        /// </summary>
+        /// <returns>returns a view with a list containing a The 10 best games</returns>
         public async Task<IActionResult> HallOfFame()
         {
             //var part = Partida.PartidakLortu(this.HttpContext);
@@ -37,7 +47,12 @@ namespace GodRun_API_el_bueno_.Controllers
            
             return View(partidaViewModel);
         }
-            public async Task<IActionResult> HallOfShame()
+
+        /// <summary>
+        /// This method will return a view with a list containing a The 10 worst games
+        /// </summary>
+        /// <returns>returns a view with a list containing a The 10 worst games</returns>
+        public async Task<IActionResult> HallOfShame()
         {
             //var part = Partida.PartidakLortu(this.HttpContext);
             var partidaViewModel = new PartidaViewModel();
@@ -47,15 +62,5 @@ namespace GodRun_API_el_bueno_.Controllers
             
             return View(partidaViewModel);
         }
-
-
-        // GET: HomeController/Details/5
-        /*
-        public async Task<IActionResult> PartidaBilatu(string name)
-        {
-            await _partidaService.GetIzena(name);
-            return RedirectToAction("index");
-        }
-        */
     }
 }

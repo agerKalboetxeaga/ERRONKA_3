@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace GodRun_API_el_bueno_.Models
 {
+    /// <summary>
+    /// This is the model class for Partida
+    /// </summary>
     public class Partida
     {
         public Partida()

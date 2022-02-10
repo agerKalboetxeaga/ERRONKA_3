@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GodRun_API(el bueno)</name>
+    </assembly>
+    <members>
+        <member name="T:GodRun_API_el_bueno_.Controllers.AllPartidaController">
+            <summary>
+            Controller for Partidas
+            </summary>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Controllers.AllPartidaController.Index">
+            <summary>
+            This method will return a view containing a List of all partidak
+            </summary>
+            <returns>returns a view containing a List of all partidak</returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Controllers.AllPartidaController.HallOfFame">
+            <summary>
+            This method will return a view with a list containing a The 10 best games
+            </summary>
+            <returns>returns a view with a list containing a The 10 best games</returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Controllers.AllPartidaController.HallOfShame">
+            <summary>
+            This method will return a view with a list containing a The 10 worst games
+            </summary>
+            <returns>returns a view with a list containing a The 10 worst games</returns>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Controllers.CommentsController">
+            <summary>
+            This class is the controller class for comments
+            </summary>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Controllers.CommentsController.Index">
+            <summary>
+            This method will return a view containing a list with comments
+            </summary>
+            <returns>returns a view containing a list with comments</returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Controllers.CommentsController.ikusiJokalaria(System.String)">
+            <summary>
+            This method will return a view containing a list with comments made for the given player
+            </summary>
+            <param name="jokalaria"> Name of the player you want to see the comments</param>
+            <returns>Returns a view with a list with comments made for the given player</returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Controllers.CommentsController.Index(System.String,System.String)">
+            <summary>
+            This method will add the sent comment to the database
+            </summary>
+            <param name="Comment"></param>
+            <param name="Jokalaria"></param>
+            <returns>Returns the view of index</returns>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Controllers.InkestaController">
+            <summary>
+            Controller class for Inkesta
+            </summary>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Controllers.InkestaController.ikusiUser">
+            <summary>
+            This method will return a view containing inkestas made by the user who is logged in
+            </summary>
+            <returns>returns a view containing inkestas made by the user who is logged in</returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Controllers.InkestaController.ShowInkesta(GodRun_API_el_bueno_.Models.Inkesta)">
+            <summary>
+            This method will add the given inkesta into the Database
+            </summary>
+            <param name="inkesta"> inkesta to be uploaded</param>
+            <returns></returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Controllers.Partida_bakoitzaController.Index(System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            This method will used to sent the looked partida into a view
+            </summary>
+            <param name="puntuazioa"></param>
+            <param name="kills"></param>
+            <param name="time"></param>
+            <param name="date"></param>
+            <param name="izena"></param>
+            <param name="jobTitle"></param>
+            <param name="workPhone"></param>
+            <param name="workEmail"></param>
+            <returns>Returns a view Containing the partida passed throug controller</returns>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Controllers.ReportController">
+            <summary>
+            Controller for the Report (PDF) creator and download
+            </summary>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Controllers.ReportController.PrintHoF">
+            <summary>
+            Hall of Shame "PDF creator"
+            </summary>
+            <returns>A view of the PDF</returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Controllers.ReportController.PrintHoS">
+            <summary>
+            Hall of Fame "PDF creator"
+            </summary>
+            <returns>A view of the PDF</returns>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Models.Comments">
+            <summary>
+            This is the model class for Comments
+            </summary>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Models.Employee">
+            <summary>
+            This is the model class for Employees
+            </summary>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Models.GodRunDbContext">
+            <summary>
+            This is the DB Context for our MS SQL Server Database
+            </summary>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Models.Inkesta">
+            <summary>
+            This is the model class for Comments
+            </summary>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Models.Partida">
+            <summary>
+            This is the model class for Partida
+            </summary>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Models.ReportModel">
+            <summary>
+            This is the model class for partidak displayed on the reports
+            </summary>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Services.ComentsService">
+            <summary>
+            Implementation class of ICommentsService
+            </summary>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Services.ComentsService.KomentarioaGehitu(GodRun_API_el_bueno_.Models.Comments)">
+            <summary>
+            This method adds the sent comment to GodRun DB
+            </summary>
+            <param name="comment">The comment to upload</param>
+            <returns></returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Services.ComentsService.KomentarioakIkusi">
+            <summary>
+            This method will allow to see all comments made (for admin purpose)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Services.ComentsService.KomentarioakIkusiLangilea(System.String)">
+            <summary>
+            This method will allow to see all comments made by the sent employee 
+            </summary>
+            <param name="jokalaria">name of employee</param>
+            <returns></returns>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Services.IComentsService">
+            <summary>
+            Interface class for the service of comments
+            </summary>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Services.IInkestaService">
+            <summary>
+            Interface class for the service of Inkesta
+            </summary>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Services.InkestaService">
+            <summary>
+            Implementation class of IInkestaService
+            </summary>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Services.InkestaService.InkestaGehitu(GodRun_API_el_bueno_.Models.Inkesta)">
+            <summary>
+            This method will add the sent inkesta into the Database
+            </summary>
+            <param name="inkesta">Inkesta to upload</param>
+            <returns></returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Services.InkestaService.InkestaIkusi">
+            <summary>
+            This method will allow to see all inkestas made (for admin purpose)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Services.InkestaService.InkestaIkusiUser(System.String)">
+            <summary>
+            This method will allow to see all inkestas made by the sent employee 
+            </summary>
+            <param name="user">name of employee</param>
+            <returns></returns>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Services.IPartidaService">
+            <summary>
+            Interface class for the service of Partidak
+            </summary>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.Services.PartidaService">
+            <summary>
+            Implementation class of IPartidaService
+            </summary>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Services.PartidaService.GetHoF">
+            <summary>
+            This method will return the 10 worst games by score in the Rest Service in a List
+            </summary>
+            <returns>A list containing the 10 worst games</returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Services.PartidaService.GetHoS">
+            <summary>
+            This method will return the 10 best games by score in the Rest Service in a List
+            </summary>
+            <returns>A list containing the 10 best games</returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Services.PartidaService.GetIzena(System.String)">
+            <summary>
+            This method will return a list of partidas made by the given langilea
+            </summary>
+            <param name="izena">The name of the langilea</param>
+            <returns>A list of partidas made by the given employee</returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Services.PartidaService.GetMota(System.Int32)">
+            <summary>
+            This method will return all partidas made
+            </summary>
+            <param name="id"></param>
+            <returns>A list of partidas</returns>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.Services.PartidaService.GetPartidas">
+            <summary>
+            This method will return all partidas made
+            </summary>
+            <returns>A list of partidas</returns>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.ViewComponents.CommentsViewComponent">
+            <summary>
+            This is the view component for the component of comments
+            </summary>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.ViewComponents.CommentsViewComponent.InvokeAsync">
+            <summary>
+            This will return the comment component "into the called view"
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.ViewComponents.WgamesViewComponent">
+            <summary>
+            This is the view component for the component of Wgames 
+            </summary>
+        </member>
+        <member name="M:GodRun_API_el_bueno_.ViewComponents.WgamesViewComponent.InvokeAsync(System.Int32)">
+            <summary>
+            This method will return a component containing all partidas
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.ViewModels.CommentsViewModel">
+            <summary>
+            This is the ViewModel used for comments
+            </summary>
+        </member>
+        <member name="P:GodRun_API_el_bueno_.ViewModels.CommentsViewModel.comments">
+            <summary>
+            A list to contain sent comments
+            Name of the employee who played the selected matches
+            </summary>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.ViewModels.InkestaViewModel">
+            <summary>
+            This is the ViewModel used for Inkestas
+            </summary>
+        </member>
+        <member name="P:GodRun_API_el_bueno_.ViewModels.InkestaViewModel.inkestak">
+            <summary>
+            List of Inkestas for the view
+            </summary>
+        </member>
+        <member name="T:GodRun_API_el_bueno_.ViewModels.PartidaViewModel">
+            <summary>
+            View Model for Partida view
+            </summary>
+        </member>
+        <member name="P:GodRun_API_el_bueno_.ViewModels.PartidaViewModel.partidak">
+            <summary>
+            List containing the partidas given, and a List of the employees that played partidas
+            </summary>
+        </member>
+        <member name="T:GodRun_WebApi.Controllers.PartidaController">
+            <summary>
+            Controller class for Partida made by a certain player
+            </summary>
+        </member>
+        <member name="M:GodRun_WebApi.Controllers.PartidaController.Index(System.String)">
+            <summary>
+            This method will return a view containing all partidak made by the given employee
+            </summary>
+            <param name="langilea">the mployee to lookup</param>
+            <returns>Returns a view containing all partidak played by the given employee</returns>
+        </member>
+        <member name="T:GodRun_WebApi.ViewComponents.JokalariakViewComponent">
+            <summary>
+            This is the view component for the component of Jokalariak 
+            </summary>
+        </member>
+        <member name="M:GodRun_WebApi.ViewComponents.JokalariakViewComponent.InvokeAsync(System.Int32)">
+            <summary>
+            This method will return a component containing all partidas form the Rest Service
+            </summary>
+            <param name="id"></param>
+            <returns>returns a component containing all partidas form the Rest Service</returns>
+        </member>
+        <member name="F:GodRun_WebApi.ViewComponents.PartidakViewComponent._partidaService">
+            <summary>
+            This is the view component for the component of Partidak 
+            </summary>
+        </member>
+        <member name="M:GodRun_WebApi.ViewComponents.PartidakViewComponent.InvokeAsync(System.Int32)">
+            <summary>
+            This method will return a component Containing all partidas played by the given player
+            </summary>
+            <param name="id"></param>
+            <returns>returns a component Containing all partidas played by the given player</returns>
+        </member>
+    </members>
+</doc>

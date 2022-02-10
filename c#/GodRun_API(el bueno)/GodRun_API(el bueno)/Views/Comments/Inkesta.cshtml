@@ -1,8 +1,8 @@
-﻿@model  GodRun_API_el_bueno_.ViewModels.InkestaViewModel;
+﻿@model GodRun_API_el_bueno_.ViewModels.InkestaViewModel;
 
-@{
-    ViewData["Title"] = "Inkesta";
-}
+@{ ViewData["Title"] = "Inkesta"; }
+
+<!--View for displaying inkestas made-->
 
 <h1>Inkesta</h1>
 
@@ -37,35 +37,35 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.inkestak) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Galdera1)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Galdera2)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Galdera3)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Galdera4)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Galdera5)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Erabiltzailea)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Data)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.inkestak)
+        {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Galdera1)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Galdera2)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Galdera3)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Galdera4)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Galdera5)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Erabiltzailea)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Data)
+    </td>
+    <td>
+        <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+        <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+        <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+    </td>
+</tr>}
     </tbody>
 </table>

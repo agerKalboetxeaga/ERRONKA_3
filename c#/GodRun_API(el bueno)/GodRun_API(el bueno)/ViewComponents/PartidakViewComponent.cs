@@ -11,12 +11,22 @@ namespace GodRun_WebApi.ViewComponents
 {
     public class PartidakViewComponent : ViewComponent
     {
+
+        /// <summary>
+        /// This is the view component for the component of Partidak 
+        /// </summary>
         private readonly IPartidaService _partidaService;
 
         public PartidakViewComponent(IPartidaService partidaService)
         { 
             _partidaService = partidaService;
         }
+
+        /// <summary>
+        /// This method will return a component Containing all partidas played by the given player
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>returns a component Containing all partidas played by the given player</returns>
         public async Task<IViewComponentResult> InvokeAsync(int id)
         {
             IList<Partida> partidak = await _partidaService.GetMota(id);

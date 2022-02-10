@@ -53,35 +53,6 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Textbox Name="Textbox1">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Wall of Fame en feo!!</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.36724cm</Top>
-            <Left>5.87058cm</Left>
-            <Height>0.6cm</Height>
-            <Width>3.84938cm</Width>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Textbox Name="Textbox2">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
@@ -90,57 +61,20 @@
                 <TextRuns>
                   <TextRun>
                     <Value>=Parameters!Param1.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontFamily>Garamond</FontFamily>
+                      <FontSize>11pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>1.47849cm</Top>
+            <Top>3.70099cm</Top>
             <Left>2.69558cm</Left>
-            <Height>0.6cm</Height>
+            <Height>0.54708cm</Height>
             <Width>4.48438cm</Width>
-            <ZIndex>1</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox3">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>HALL OF SHAME</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox3</rd:DefaultName>
-            <Top>1.47849cm</Top>
-            <Left>11.08287cm</Left>
-            <Height>0.6cm</Height>
-            <Width>3.55833cm</Width>
-            <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -223,6 +157,15 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -253,6 +196,15 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -283,6 +235,15 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -315,8 +276,7 @@
                           <rd:DefaultName>id</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -345,8 +305,7 @@
                           <rd:DefaultName>name</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -375,8 +334,7 @@
                           <rd:DefaultName>puntuazioa</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -405,8 +363,7 @@
                           <rd:DefaultName>kills</rd:DefaultName>
                           <Style>
                             <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
+                              <Style>None</Style>
                             </Border>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -439,11 +396,11 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>4.12433cm</Top>
+            <Top>5.23558cm</Top>
             <Left>2.69558cm</Left>
             <Height>1.2cm</Height>
             <Width>10cm</Width>
-            <ZIndex>3</ZIndex>
+            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -518,6 +475,18 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <TopBorder>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>None</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>None</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>None</Style>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -546,17 +515,82 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>4.12433cm</Top>
+            <Top>5.23558cm</Top>
             <Left>14.86641cm</Left>
             <Height>1.2cm</Height>
             <Width>2.5cm</Width>
-            <ZIndex>4</ZIndex>
+            <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Tablix>
+          <Textbox Name="Textbox5">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Wall of Shame ;(</Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                      <FontFamily>Garamond</FontFamily>
+                      <FontSize>14pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>2.19245cm</Top>
+            <Left>6.45266cm</Left>
+            <Height>0.6cm</Height>
+            <Width>4.11334cm</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Image Name="Image2">
+            <Source>Embedded</Source>
+            <Value>logo1</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>0.23425cm</Top>
+            <Left>4.14935cm</Left>
+            <Height>1.5cm</Height>
+            <Width>10.46938cm</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Image Name="Image4">
+            <Source>Embedded</Source>
+            <Value>GodRunnerIcon</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>2.19245cm</Top>
+            <Left>12.16623cm</Left>
+            <Height>2.05562cm</Height>
+            <Width>1.92333cm</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
         </ReportItems>
         <Height>4.30208in</Height>
         <Style />
@@ -593,6 +627,22 @@
       </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
+  <EmbeddedImages>
+    <EmbeddedImage Name="GodRunnerIcon">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAEAAAABABAMAAABYR2ztAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEUAAAApRUUSICA1Y49Yjb7EV9gGBgglOEkIDQ0yUlL///+ikeldAAAAAXRSTlMAQObYZgAAAAFiS0dECmjQ9FYAAAAHdElNRQflDAQLNCk1At69AAAAf0lEQVRIx9XQ2wnAIAxAUVfIClmhK2QFV3CFrOAKbtumPhDUUgpN8H6ImPOhOtcFgHdu1c8AoI4XSAUgHiUbkMdE5P21TIgSoC47EIIMZbUAcvB4SSXAXG5IzFZASE72MWqDSmrDWAHg0PQVb0BK9uDjK3BaR3YD7aMMwZ4/eQJFxPVx2B6K9QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMS0xMi0wNFQxMTo1MjozOCswMDowMFYNfgoAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjEtMTItMDRUMTE6NTI6MzgrMDA6MDAnUMa2AAAAAElFTkSuQmCC</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="logo1w">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAlgAAABXCAMAAADvccsSAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAADNQTFRFAAAA////////////////////////////////////////////////////////////////t5XiggAAABF0Uk5TAGCPgFBAcDAQIJ//37/vr8+qpB8HAAAD3klEQVR4nO2c23KrMAwAS8iNlBD+/2sPYmqOiWQiu5TSye5jYtmS2HbCzR8fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/QXVwU4eYo298lTn+lJF27U97mvacTFC4qMCrlXo9S0PFNMmZ0qmnE0xTlTZhM26fbtqpAb7x9zD+4Bt/yEi786c9TXt//uYRz3hSgSJJ/fxhG8dcVcxx+PSoPp2J1T5/O7mqEkxzL23CZiDWF4i1Loj1BWKtx2UgVyyJUd226U8DEuMU6xHGO8jo6TTtKmJ1MlsQxSvWcYhpwkKmWFeZtvcXlStWTm+/jz+vkVGsjL+qETkGTrGEzpl6Rk+naVcRayQcIq9YwjksZIrVvK5hRq5Ygre33yezGMQKINYymcUgVgCxlsksBrECiLWMWrpuFpEYdXRu8Qh9vmiK1YfxWrl24PI6ddXTQ5yGmnZlsbohSRElRyyJuclCTrGOr49FSRM2QRVzfh2jxYq/tc+0tVhh/PI/hAVUT2dXxPW5nJl6sViCnMDniCWM/2ecYv1QEzZBFYNYMYhViioGsWIQqxRVzOZineq61r+z/oRYvZn6slid3A82U0esdcUSNuvpumLZLItlg1gCYi2CWIIqBrFiEKsUVcx4beZiMd2f36tYtzjb2YJt3/d3M/Vdi3WOC1qvCZugizEbHIof2atYadZ9bOYF64mlpl2nCZuglkesGMQqRS2PWDGIVYpaHrFiEKsUtXxarG748Tceh3cXq5XfxelHPW2xTkPMIxnz1mIJ
+9mMz7yaWOdNE+pn39LNDiCUxiGXNNIFYgloesWIQqxS1vIjVhJdn1Q+JXYt1ryNmScrd4tpMvVis6nmNibRYxyHGfiXKFusWF2RfIS1pwiaoYma3dJx/rDsRa6tbOi9erlx+rzB9xv0Gt3TSiSHWJ2K5UMUgVgxilaKK2Vysa9M0l616uq5Ylbz2oWKWxbqYMYgln777o8k/tHcDYiFWBGLZqGIQKwaxSlHFIFYMYpWiimnvEaoBtlhdHKPvztoXnZNrzHYJWmAVsWap6wuevyuWPPOZ5lDahE1QxSyz670bSsR6we+KtYy9dwNiJUEsH4iFWJ/vJ5bcatbX6+xCDl87UVfW7WmbNuxE7RRrWsNBSU8ldadcbdhaeyuxruY70mn2LZbg3IN0lvIeN7d19rTKTP1vbW6LWCaI5UtuShCxfOMRy5fclOCuxTp0LmYpV76Y/0fHNz5HrHYxwfPzt5MOx8zU0zMJVxUoYp3UpzOx+mTqD19yU4KlTQAAAAAAAAAAAAAAAAAAAAAAAAAAAEjzD7VViIJ5ZEwUAAAAAElFTkSuQmCC</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="logo1">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAlgAAABXCAMAAADvccsSAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAADNQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAowVGyQAAABF0Uk5TAGCPgFBAcDAQIJ//37/vr8+qpB8HAAAD3klEQVR4nO2c23KrMAwAS8iNlBD+/2sPYmqOiWQiu5TSye5jYtmS2HbCzR8fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/QXVwU4eYo298lTn+lJF27U97mvacTFC4qMCrlXo9S0PFNMmZ0qmnE0xTlTZhM26fbtqpAb7x9zD+4Bt/yEi786c9TXt//uYRz3hSgSJJ/fxhG8dcVcxx+PSoPp2J1T5/O7mqEkxzL23CZiDWF4i1Loj1BWKtx2UgVyyJUd226U8DEuMU6xHGO8jo6TTtKmJ1MlsQxSvWcYhpwkKmWFeZtvcXlStWTm+/jz+vkVGsjL+qETkGTrGEzpl6Rk+naVcRayQcIq9YwjksZIrVvK5hRq5Ygre33yezGMQKINYymcUgVgCxlsksBrECiLWMWrpuFpEYdXRu8Qh9vmiK1YfxWrl24PI6ddXTQ5yGmnZlsbohSRElRyyJuclCTrGOr49FSRM2QRVzfh2jxYq/tc+0tVhh/PI/hAVUT2dXxPW5nJl6sViCnMDniCWM/2ecYv1QEzZBFYNYMYhViioGsWIQqxRVzOZineq61r+z/oRYvZn6slid3A82U0esdcUSNuvpumLZLItlg1gCYi2CWIIqBrFiEKsUVcx4beZiMd2f36tYtzjb2YJt3/d3M/Vdi3WOC1qvCZugizEbHIof2atYadZ9bOYF64mlpl2nCZuglkesGMQqRS2PWDGIVYpaHrFiEKsUtXxarG748Tceh3cXq5XfxelHPW2xTkPMIxnz1mIJ
+9mMz7yaWOdNE+pn39LNDiCUxiGXNNIFYgloesWIQqxS1vIjVhJdn1Q+JXYt1ryNmScrd4tpMvVis6nmNibRYxyHGfiXKFusWF2RfIS1pwiaoYma3dJx/rDsRa6tbOi9erlx+rzB9xv0Gt3TSiSHWJ2K5UMUgVgxilaKK2Vysa9M0l616uq5Ylbz2oWKWxbqYMYgln777o8k/tHcDYiFWBGLZqGIQKwaxSlHFIFYMYpWiimnvEaoBtlhdHKPvztoXnZNrzHYJWmAVsWap6wuevyuWPPOZ5lDahE1QxSyz670bSsR6we+KtYy9dwNiJUEsH4iFWJ/vJ5bcatbX6+xCDl87UVfW7WmbNuxE7RRrWsNBSU8ldadcbdhaeyuxruY70mn2LZbg3IN0lvIeN7d19rTKTP1vbW6LWCaI5UtuShCxfOMRy5fclOCuxTp0LmYpV76Y/0fHNz5HrHYxwfPzt5MOx8zU0zMJVxUoYp3UpzOx+mTqD19yU4KlTQAAAAAAAAAAAAAAAAAAAAAAAAAAAEjzD7VViIJ5ZEwUAAAAAElFTkSuQmCC</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>73a5d80c-a3bc-4bc4-96f1-ac64f403ca45</rd:ReportID>
 </Report>

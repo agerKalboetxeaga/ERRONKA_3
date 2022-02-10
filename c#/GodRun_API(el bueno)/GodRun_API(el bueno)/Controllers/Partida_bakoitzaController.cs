@@ -18,20 +18,19 @@ namespace GodRun_API_el_bueno_.Controllers
             this._partidaService = _partidaService;
         }
 
-        // GET: HomeController
-        
-        /*
-         public async Task<IActionResult> Index(Partida partida)
-         {
-             //var part = Partida.PartidakLortu(this.HttpContext);
-             var partidaViewModel = new PartidaViewModel();
-             partidaViewModel.partidak = new List<Partida>();
-             partidaViewModel.partidak.Add(partida);
-             return View(partidaViewModel);
-         }
-        */
 
-        
+        /// <summary>
+        /// This method will used to sent the looked partida into a view
+        /// </summary>
+        /// <param name="puntuazioa"></param>
+        /// <param name="kills"></param>
+        /// <param name="time"></param>
+        /// <param name="date"></param>
+        /// <param name="izena"></param>
+        /// <param name="jobTitle"></param>
+        /// <param name="workPhone"></param>
+        /// <param name="workEmail"></param>
+        /// <returns>Returns a view Containing the partida passed throug controller</returns>
         public async Task<IActionResult> Index(int puntuazioa, int kills, string time, string date, string izena, string jobTitle, string workPhone, string workEmail)
         {
             //var part = Partida.PartidakLortu(this.HttpContext);
@@ -45,14 +44,6 @@ namespace GodRun_API_el_bueno_.Controllers
             return View(partidaViewModel);
         }
         
-        
-        // GET: HomeController/Details/5
-        /*
-        public async Task<IActionResult> PartidaBilatu(string name)
-        {
-            await _partidaService.GetIzena(name);
-            return RedirectToAction("index");
-        }
-        */
+  
     }
 }

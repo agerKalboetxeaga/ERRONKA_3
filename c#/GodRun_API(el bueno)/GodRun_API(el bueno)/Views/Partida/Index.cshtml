@@ -3,6 +3,9 @@
     ViewData["Title"] = "Index";
 }
 
+<!--View to display all games made by the selected player-->
+
+
 <div class="container ">
 <h1>@Model.partidak.First().employee.name's Games</h1>
 <table class="table">
@@ -33,7 +36,7 @@
         }
     </tbody>
 </table>
-
+    <!--ViewComponent for the form of comments-->
 @await Component.InvokeAsync("Comments", new { id = @Model.partidak.First().employee.name })
 
 

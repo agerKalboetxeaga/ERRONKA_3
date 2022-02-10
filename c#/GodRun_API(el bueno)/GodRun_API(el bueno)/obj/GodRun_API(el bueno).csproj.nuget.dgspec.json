@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kalboetxeaga.ager\\Desktop\\ERRONKA_3-main\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj": {}
+    "C:\\Users\\kalboetxeaga.ager\\Desktop\\ERRONKA_3\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj": {}
   },
   "projects": {
-    "C:\\Users\\kalboetxeaga.ager\\Desktop\\ERRONKA_3-main\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj": {
+    "C:\\Users\\kalboetxeaga.ager\\Desktop\\ERRONKA_3\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kalboetxeaga.ager\\Desktop\\ERRONKA_3-main\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
+        "projectUniqueName": "C:\\Users\\kalboetxeaga.ager\\Desktop\\ERRONKA_3\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
         "projectName": "GodRun_API(el bueno)",
-        "projectPath": "C:\\Users\\kalboetxeaga.ager\\Desktop\\ERRONKA_3-main\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
+        "projectPath": "C:\\Users\\kalboetxeaga.ager\\Desktop\\ERRONKA_3\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
         "packagesPath": "C:\\Users\\kalboetxeaga.ager\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kalboetxeaga.ager\\Desktop\\ERRONKA_3-main\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\obj\\",
+        "outputPath": "C:\\Users\\kalboetxeaga.ager\\Desktop\\ERRONKA_3\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -80,6 +80,12 @@
             "System.Text.Encoding.CodePages": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "docfx.console": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.59.0, )"
             }
           },
           "imports": [

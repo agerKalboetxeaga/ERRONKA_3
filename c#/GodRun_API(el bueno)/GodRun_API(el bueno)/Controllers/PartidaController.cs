@@ -10,6 +10,9 @@ using GodRun_API_el_bueno_.Services;
 
 namespace GodRun_WebApi.Controllers
 {
+    /// <summary>
+    /// Controller class for Partida made by a certain player
+    /// </summary>
     public class PartidaController : Controller
     {
         private readonly IPartidaService _partidaService;
@@ -19,6 +22,11 @@ namespace GodRun_WebApi.Controllers
         }
 
         // GET: HomeController
+        /// <summary>
+        /// This method will return a view containing all partidak made by the given employee
+        /// </summary>
+        /// <param name="langilea">the mployee to lookup</param>
+        /// <returns>Returns a view containing all partidak played by the given employee</returns>
         public async Task <IActionResult> Index(string langilea)
         {
             //var part = Partida.PartidakLortu(this.HttpContext);
@@ -27,14 +35,5 @@ namespace GodRun_WebApi.Controllers
             return View(partidaViewModel);
         }
 
-     
-        // GET: HomeController/Details/5
-        /*
-        public async Task<IActionResult> PartidaBilatu(string name)
-        {
-            await _partidaService.GetIzena(name);
-            return RedirectToAction("index");
-        }
-        */
     }
 }

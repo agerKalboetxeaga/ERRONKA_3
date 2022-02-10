@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace GodRun_API_el_bueno_.Models
 {
+    /// <summary>
+    /// This is the model class for Comments
+    /// </summary>
     public class Comments
     {
         [Key]

@@ -1,7 +1,7 @@
 ﻿@model GodRun_API_el_bueno_.ViewModels.PartidaViewModel;
-@{
-    ViewData["Title"] = "Index";
-}
+@{ ViewData["Title"] = "Index"; }
+
+<!--View to display all games made-->
 
 <div class="container ">
     <h1>Games</h1>
@@ -23,13 +23,12 @@
         <tbody>
             @foreach (var item in Model.partidak)
             {
-                <tr>
-                    <th scope="row">@Html.DisplayFor(modelItem => item.puntuazioa)</th>
-                    <td>@Html.DisplayFor(modelItem => item.kills)</td>
-                    <td>@Html.DisplayFor(modelItem => item.time)</td>
-                    <td>@Html.DisplayFor(modelItem => item.date)</td>
-                </tr>
-            }
+<tr>
+    <th scope="row">@Html.DisplayFor(modelItem => item.puntuazioa)</th>
+    <td>@Html.DisplayFor(modelItem => item.kills)</td>
+    <td>@Html.DisplayFor(modelItem => item.time)</td>
+    <td>@Html.DisplayFor(modelItem => item.date)</td>
+</tr>            }
         </tbody>
     </table>
 

@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace GodRun_API_el_bueno_.Models
 {
+    /// <summary>
+    /// This is the model class for partidak displayed on the reports
+    /// </summary>
     public class ReportModel
     {
         public int id { get; set; }

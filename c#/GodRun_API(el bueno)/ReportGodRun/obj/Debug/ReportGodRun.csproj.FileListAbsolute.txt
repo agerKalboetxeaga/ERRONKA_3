@@ -50,3 +50,16 @@ C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\version\GodRun_API(el bueno)\Repor
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\version\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.csproj.CoreCompileInputs.cache
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\version\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.exe
 C:\Users\perez.kepa\KEPA\2EBAL\ERRONKA\Git hb\version\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.pdb
+C:\Users\kalboetxeaga.ager\Desktop\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\bin\Debug\Report2.rdlc
+C:\Users\kalboetxeaga.ager\Desktop\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\bin\Debug\Report1.rdlc
+C:\Users\kalboetxeaga.ager\Desktop\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\bin\Debug\ReportGodRun.exe.config
+C:\Users\kalboetxeaga.ager\Desktop\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\bin\Debug\ReportGodRun.exe
+C:\Users\kalboetxeaga.ager\Desktop\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\bin\Debug\ReportGodRun.pdb
+C:\Users\kalboetxeaga.ager\Desktop\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.csproj.AssemblyReference.cache
+C:\Users\kalboetxeaga.ager\Desktop\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.Properties.Resources.resources
+C:\Users\kalboetxeaga.ager\Desktop\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.csproj.GenerateResource.cache
+C:\Users\kalboetxeaga.ager\Desktop\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\obj\Debug\RdlCompile.cache
+C:\Users\kalboetxeaga.ager\Desktop\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\obj\Debug\RdlCompile.compiled
+C:\Users\kalboetxeaga.ager\Desktop\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.csproj.CoreCompileInputs.cache
+C:\Users\kalboetxeaga.ager\Desktop\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.exe
+C:\Users\kalboetxeaga.ager\Desktop\ERRONKA_3\c#\GodRun_API(el bueno)\ReportGodRun\obj\Debug\ReportGodRun.pdb

@@ -9,6 +9,9 @@ using GodRun_API_el_bueno_.Models;
 
 namespace GodRun_API_el_bueno_.ViewComponents
 {
+    /// <summary>
+    /// This is the view component for the component of comments
+    /// </summary>
     public class CommentsViewComponent : ViewComponent
 
     {
@@ -18,6 +21,11 @@ namespace GodRun_API_el_bueno_.ViewComponents
         {
             _comentsService = comentsService;
         }
+
+        /// <summary>
+        /// This will return the comment component "into the called view"
+        /// </summary>
+        /// <returns></returns>
         public async Task<IViewComponentResult> InvokeAsync()
         {
             return View();

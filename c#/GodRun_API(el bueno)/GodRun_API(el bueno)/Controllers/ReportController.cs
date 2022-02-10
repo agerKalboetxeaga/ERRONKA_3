@@ -12,6 +12,10 @@ using GodRun_API_el_bueno_.Services;
 
 namespace GodRun_API_el_bueno_.Controllers
 {
+
+    /// <summary>
+    /// Controller for the Report (PDF) creator and download
+    /// </summary>
     public class ReportController : Controller
     {
         private readonly IWebHostEnvironment _webHostEnviroment;

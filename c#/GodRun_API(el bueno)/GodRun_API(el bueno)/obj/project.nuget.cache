@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "hbTVNLONOkumtn5XXsNfr9DgkDU6G1IsTeMsReQQz8QBKzqcXKgds3Oi0tzEqzEay2RW3Hgls9iPT0aKr3LCxA==",
+  "dgSpecHash": "CtHSAhCA+dio3Xi3ERSAiKL1stkx+mKC2Olc4MGBBiPBSEcYfmUCuniOPVgLusVqL2I0wz3C5bNHKVQyBoAZ9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kalboetxeaga.ager\\Desktop\\ERRONKA_3-main\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
+  "projectFilePath": "C:\\Users\\kalboetxeaga.ager\\Desktop\\ERRONKA_3\\c#\\GodRun_API(el bueno)\\GodRun_API(el bueno)\\GodRun_API(el bueno).csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kalboetxeaga.ager\\.nuget\\packages\\aspnetcore.reporting\\2.1.0\\aspnetcore.reporting.2.1.0.nupkg.sha512",
     "C:\\Users\\kalboetxeaga.ager\\.nuget\\packages\\aspnetcore.reportingservices\\2.1.0\\aspnetcore.reportingservices.2.1.0.nupkg.sha512",
+    "C:\\Users\\kalboetxeaga.ager\\.nuget\\packages\\docfx.console\\2.59.0\\docfx.console.2.59.0.nupkg.sha512",
     "C:\\Users\\kalboetxeaga.ager\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\kalboetxeaga.ager\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\5.0.13\\microsoft.aspnetcore.authentication.google.5.0.13.nupkg.sha512",
     "C:\\Users\\kalboetxeaga.ager\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",

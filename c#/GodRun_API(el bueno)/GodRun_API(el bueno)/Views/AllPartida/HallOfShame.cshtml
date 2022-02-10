@@ -1,7 +1,8 @@
 ﻿@model GodRun_API_el_bueno_.ViewModels.PartidaViewModel;
-@{
-    ViewData["Title"] = "Index";
-}
+@{ ViewData["Title"] = "Index"; }
+
+<!-- View for displaying the hall of shame (worst 10 games)-->
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +16,7 @@
 
 
     <h1>Hall Of Shame</h1>
-  
+
     <table class="table">
         <thead class="thead-dark">
             <tr>
@@ -28,40 +29,39 @@
                 <th scope="col">Name</th>
             </tr>
         </thead>
-        <tbody>@{ int cnt = 1;}
+        <tbody>
+            @{ int cnt = 1;}
 
-            @foreach (var item in Model.partidak.OrderBy(a => a.puntuazioa))
-            {
-            <tr>
-                <td>
-                    @cnt
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.puntuazioa)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.kills)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.time)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.date)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.employee.name)
-                </td>
-                @{cnt++;}
-            </tr>
-            }
+        @foreach (var item in Model.partidak.OrderBy(a => a.puntuazioa))
+        {
+<tr>
+    <td>
+        @cnt
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.puntuazioa)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.kills)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.time)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.date)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.employee.name)
+    </td>
+    @{cnt++;}
+</tr>            }
 
-        </tbody>
-    </table>
-    <a id="linkdercarga" asp-action="PrintHoS">DESCARGAR PDF</a>
+    </tbody>
+</table>
+<a id="linkdercarga" asp-action="PrintHoS">DESCARGAR PDF</a>
 
-    @*
-        For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-    *@
-    @{
-    }
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{ }
 </div>

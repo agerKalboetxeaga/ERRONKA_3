@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace GodRun_API_el_bueno_.Services
 {
+    /// <summary>
+    /// Interface class for the service of Partidak
+    /// </summary>
     public interface IPartidaService
     {
         Task<IList<Partida>> GetMota(int id);

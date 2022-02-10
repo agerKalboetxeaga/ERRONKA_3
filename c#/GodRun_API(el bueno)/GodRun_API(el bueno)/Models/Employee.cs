@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace GodRun_API_el_bueno_.Models
 {
+    /// <summary>
+    /// This is the model class for Employees
+    /// </summary>
     public class Employee
     {
         public Employee()
@@ -20,7 +23,7 @@ namespace GodRun_API_el_bueno_.Models
             this.workEmail = workEmail;
         }
         
-       // public int id { get; set;} no se si puedo omitirlo
+      
         public string name { get; set; }
         public string jobTitle { get; set; }
         public string workPhone { get; set; }
