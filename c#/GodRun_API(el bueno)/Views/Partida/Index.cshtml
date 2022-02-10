@@ -1,0 +1,41 @@
+﻿@model GodRun_API_el_bueno_.ViewModels.PartidaViewModel;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container ">
+<h1>@Model.partidak.First().employee.name's Games</h1>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+
+
+            <th scope="col">Points</th>
+            <th scope="col">Kills</th>
+            <th scope="col">Time</th>
+            <th scope="col">Date</th>
+        </tr>
+    </thead>
+
+
+
+
+
+    <tbody>
+        @foreach (var item in Model.partidak)
+        {
+            <tr>
+                <th scope="row">@Html.DisplayFor(modelItem => item.puntuazioa)</th>
+                <td>@Html.DisplayFor(modelItem => item.kills)</td>
+                <td>@Html.DisplayFor(modelItem => item.time)</td>
+                <td>@Html.DisplayFor(modelItem => item.date)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@await Component.InvokeAsync("Comments", new { id = @Model.partidak.First().employee.name })
+
+
+</div>
+
