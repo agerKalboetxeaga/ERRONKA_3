@@ -1,0 +1,66 @@
+﻿@model IEnumerable<GodRun_API_el_bueno_.Models.Partida>
+
+@{
+    ViewData["Title"] = "Jokalariak";
+}
+
+
+
+@foreach (var item in Model)
+{
+    @if (item.puntuazioa > 50000)
+    {
+        <a class="dropdown-item">@Html.DisplayFor(modelItem => item.employee.name) ->  @Html.DisplayFor(modelItem => item.puntuazioa)</a>
+
+        
+
+                @Html.ActionLink("ikusi", "Index", "Partida_bakoitza", new { puntuazioa = item.puntuazioa, kills = item.kills, time = item.time, date = item.date, izena = item.employee.name, jobTitle = item.employee.jobTitle, workPhone = item.employee.workPhone, workEmail = item.employee.workEmail }) 
+   }
+        }
+
+
+        <!--
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.puntuazioa)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.kills)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.time)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.date)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.puntuazioa)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.kills)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.time)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.date)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+            -->
